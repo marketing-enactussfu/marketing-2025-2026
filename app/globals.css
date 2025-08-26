@@ -1,26 +1,108 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  --color-primary-red: #dc5939;
+  --color-secondary-red: #c70d00;
+  --color-primary-gray: #282828;
+  --spacing-lg-gutter: 100px;
+  --color-primary-yellow: #ffc220;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --background: black;
+  --foreground: white;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: black;
   }
 }
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-white;
+  }
+}
+
+/* debug */
+
+/* * {
+  border: 1px solid red;
+} */
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Typography System */
+.h0 {
+  font-size: 4rem; /* 64px */
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+  color: #ffffff !important; /* Force white color */
+}
+
+h1 {
+  font-size: 3rem; /* 48px */
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.85rem; /* 36px */
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 0.875rem;
+}
+
+h3 {
+  font-size: 1.4rem; /* 30px */
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+}
+
+h4 {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 0.625rem;
+}
+
+p {
+  font-size: 1rem; /* 16px */
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-size: 0.875rem; /* 14px */
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+/* Section Styles */
+.section-standard {
+  padding-left: 100px;
+  padding-right: 100px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  width: 100%;
+}
+
+.golden-glow {
+  text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 20px #ffd700;
 }
