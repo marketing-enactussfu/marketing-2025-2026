@@ -8,7 +8,7 @@ function page() {
   const items = [
     {
       label: "Development",
-      body: 'Alloww students to build sustainable projects and further their impact by adapting to changing trends.',
+      body: 'Allow students to build sustainable projects and further their impact by adapting to changing trends.',
       icons: 'MdConstruction'
     },
     {
