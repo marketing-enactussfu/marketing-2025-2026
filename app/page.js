@@ -44,7 +44,7 @@ function page() {
             textShadow: '0 0 20px #FFD700, 0 0 40px #FFD700, 0 0 60px #FFD700'
           }}>
             FUELED BY<br />
-            INNOVATIONING
+            INNOVATIONINGG
           </h1>
         </div>
       </section>
