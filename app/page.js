@@ -45,7 +45,7 @@ function page() {
           >
             FUELED BY
             <br />
-            INNOVATIONING
+            INNOVATIONINGG
           </h1>
         </div>
       </section>
