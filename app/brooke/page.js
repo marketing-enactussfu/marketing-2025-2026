@@ -2,8 +2,6 @@ import React from "react";
 import SponsorImgMed from "../components/sponsorImgMed.js";
 import SponsorImgSmall from "../components/sponsorImgSmall.js";
 import SponsorBanner from "../components/sponsorBanner.js";
-import Header from "../components/header.js";
-import Footer from "../components/footer.js";
 import Button from "../components/button.js";
 
 function page() {
@@ -14,39 +12,45 @@ function page() {
     { img: " ", sponsor: "Oxygen Yoga & Fitness", width: " ", height: " " },
     { img: " ", sponsor: "Popeye's Supplements", width: " ", height: " " },
     { img: " ", sponsor: "Red Bull", width: " ", height: " " },
-    { img: " ", sponsor: " ", width: " ", height: " " },
+    { img: " ", sponsor: "placeholder 1 ", width: " ", height: " " },
     { img: " ", sponsor: "Vancouver Mysteries", width: " ", height: " " },
-    { img: " ", sponsor: " ", width: " ", height: " " },
-    { img: " ", sponsor: " ", width: " ", height: " " },
+    { img: " ", sponsor: "placeholder 2", width: " ", height: " " },
+    { img: " ", sponsor: "placeholder 3", width: " ", height: " " },
   ];
 
   const forwardVisionList = [
     {
       img: "/images/FV1.png",
-      sponsor: "Test",
-      width: "776",
-      height: "662",
+      sponsor: "Something",
+      width: "800",
+      height: "600",
+    },
+    {
+      img: "/images/FV1.png",
+      sponsor: "Something 2",
+      width: "800",
+      height: "600",
     },
   ];
 
   return (
-    <div>
-      <div className="section-standard">
-        <div className="mt-12 mb-12">
-          <h3 className="text-primary-yellow">Sponsorships</h3>
+    <div className="section-standard">
+      <div className="flex flex-col mt-12 mb-12 gap-y-4">
+        <h3 className="text-primary-yellow">Sponsorships</h3>
 
-          <h1>Thank you to all our partners!</h1>
+        <h1>Thank you to all our partners!</h1>
 
-          <div className="flex gap-[24px]">
-            <Button size="large" variant="primary">
-              Become a Sponsor
-            </Button>
-            <Button size="large" variant="primary">
-              Sponsorship Package
-            </Button>
-          </div>
+        <div className="flex gap-[24px]">
+          <Button size="large" variant="primary">
+            Become a Sponsor
+          </Button>
+          <Button size="large" variant="primary">
+            Sponsorship Package
+          </Button>
         </div>
+      </div>
 
+      <div className="flex flex-col gap-4 mb-12">
         <h1>Our Partners</h1>
 
         <div className="flex gap-[20px] mb-12 justify-baseline">
@@ -65,18 +69,23 @@ function page() {
           ></SponsorBanner>
         </div>
 
-        <div className="mt-12">
-          <SponsorImgMed
-            img="/images/FV1.png"
-            sponsor="Sponsor Name"
-            width={800}
-            height={600}
-          ></SponsorImgMed>
+        <div className="flex flex-wrap gap-[20px] mb-[20px] mt-[32px]">
+          {forwardVisionList.map((sponsor) => (
+            <SponsorImgMed
+              key={sponsor.sponsor}
+              img={sponsor.img}
+              sponsor={sponsor.sponsor}
+              width={sponsor.width}
+              height={sponsor.height}
+            ></SponsorImgMed>
+          ))}
         </div>
+      </div>
 
-        <h1>Our Partners for Forward Vision</h1>
+      <div>
+        <h1 className="mt-8 mb-8">Our Partners for Forward Vision</h1>
 
-        <div className="flex flex-wrap gap-[20px]">
+        <div className="flex flex-wrap gap-[20px] mb-[20px]">
           {forwardVisionList.map((sponsor) => (
             <SponsorImgSmall
               key={sponsor.sponsor}
@@ -89,7 +98,13 @@ function page() {
         </div>
       </div>
 
-      <Footer />
+      <div className="flex flex-col gap-4 mt-[64px] mb-[64px]">
+        <h1>Interested in becoming a partner?</h1>
+        <h3 className="text-primary-yellow">
+          If you would like to partner with us, fill out the form below and one
+          of our staff members will get back to you.
+        </h3>
+      </div>
     </div>
   );
 }
