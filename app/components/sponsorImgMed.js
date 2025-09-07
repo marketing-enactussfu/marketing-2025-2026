@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 
-function sponsorImg({ img, sponsor, width, height }) {
+function sponsorImgMed({ img, sponsor, width, height }) {
   return (
-    <div className="bg-primary-gray rounded-[16px] p-[1.6rem] w-[20%] text-white">
+    <div className="bg-primary-gray rounded-[16px] p-[2%] w-[calc(20%-5rem)] text-white">
       <Image
         src={img}
         alt={sponsor}
@@ -15,4 +15,4 @@ function sponsorImg({ img, sponsor, width, height }) {
   );
 }
 
-export default sponsorImg;
+export default sponsorImgMed;

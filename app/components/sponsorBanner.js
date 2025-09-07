@@ -9,7 +9,7 @@ function sponsorBanner({ img, sponsor, width, height }) {
         alt={sponsor}
         width={width}
         height={height}
-        className="w-auto h-full"
+        className="w-full h-auto rounded-[16px]"
       />
 
       <h3 className="text-primary-yellow">{sponsor}</h3>
