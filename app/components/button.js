@@ -9,7 +9,7 @@ function Button({
     className = '',
     type = 'button'
 }) {
-    const baseClasses = 'items-center text-black hover:text-white hover:cursor-pointer ease-in-out duration-[300ms] focus:opacity-[80%] w-fit'
+    const baseClasses = 'items-center text-black hover:text-white hover:cursor-pointer ease-in-out duration-[300ms] focus:opacity-[80%] w-fit font-dm-sans font-[600] text-[16px] leading-[1.4]'
 
     const variants = {
         primary: 'bg-primary-red hover:bg-[#C70D00]',
