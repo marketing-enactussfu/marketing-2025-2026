@@ -6,15 +6,17 @@ import Image from "next/image";
 
 function imgbanner({ header, body, cta1, cta2, instagram, linkedin, img }) {
     return (
-        <div className='flex flex-col gap-[16px]'> 
-            <Image
-                src={img}
-                alt="Hero Image"
-                width={1920}
-                height={1080}
-                className="w-full h-[600px] object-cover"
-                priority
-            />
+        <div className='flex flex-col gap-[16px]'>
+            <div className="w-full h-[600px] relative overflow-hidden">
+                <Image
+                    src={img}
+                    alt="Hero Image"
+                    fill
+                    className="object-cover"
+                    priority
+                    unoptimized
+                />
+            </div>
             <div className='flex flex-col gap-[48px] justify-between h-full '>
                 <div className='flex flex-col gap-[16px] h-[100%] w-full '>
                     <h2>{header}</h2>
