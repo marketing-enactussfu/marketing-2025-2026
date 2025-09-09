@@ -1,4 +1,6 @@
-import React from 'react'
+'use client'
+
+import React, { useState } from 'react'
 import Modal from "../components/modal.js"
 import Header from "../components/header.js"
 import Label from "../components/label.js"
@@ -8,7 +10,12 @@ import Imglabel from "../components/imglabel.js"
 import Leadership from "../components/leadership.js"
 import ImgBanner from "../components/imgbanner.js"
 
-function page() {
+function Page() {
+
+
+
+
+
     const leadershipList = [
         {
             name: "Cameron Miranda",
@@ -99,10 +106,23 @@ function page() {
         },
     ];
 
+    const [dropdown, setDropdown] = useState(true)
+
     return (
         <div className='flex flex-col gap-4'>
 
-            <Header
+            <div className={`border-2 border-white p-[24px] flex flex-col gap-[16px] ease-in-out duration-[300ms] transition-all
+                ${dropdown === true ? "bg-primary-yellow text-black max-h-[10rem]" : "bg-primary-gray text-white max-h-[5rem]"}
+                `}>
+                <button className="bg-white text-black p-[4px] rounded-md w-fit" onClick={() => setDropdown(!dropdown)}>ACTUALLY click me</button>
+                <div className='flex flex-col gap-[16px]'>
+                    <h3>Drop down title</h3>
+                    {dropdown === true ? <h5>Some random text dropdown</h5> : ""
+                    }
+                </div>
+            </div>
+
+            {/* <Header
                 header="Our Events"
                 body="Discover our educational workshops hosted by Enactus SFU, connect with like-minded individuals, and learn about sustainable social entrepreneurship."
             />
@@ -147,10 +167,12 @@ function page() {
                 cta2="Learn More"
                 instagram=""
                 linkedin="">
-            </ImgBanner>
+            </ImgBanner> */}
+
+
 
         </div >
     )
 }
 
-export default page;
+export default Page;
