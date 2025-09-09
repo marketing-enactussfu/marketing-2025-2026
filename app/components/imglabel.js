@@ -6,17 +6,17 @@ import Image from "next/image";
 
 function imglabel({ header, body, cta1, cta2, instagram, linkedin, img }) {
     return (
-        <div className='bg-primary-gray flex flex-col gap-[32px] p-[48px]'>
+        <div className='bg-primary-gray flex flex-col gap-[32px] p-[48px] w-[100%] h-auto rounded-[16px]'>
             <Image
                 src={img}
                 alt="Hero Image"
                 width={1920}
                 height={1080}
-                className="w-full h-[600px]"
+                className="w-full h-auto]"
                 priority
             />
-            <div className='flex flex-col gap-[48px]'>
-                <div className='flex flex-col gap-[16px]'>
+            <div className='flex flex-col gap-[48px] justify-between h-full '>
+                <div className='flex flex-col gap-[16px] h-[100%] w-full '>
                     <h2>{header}</h2>
                     <h3>{body}</h3>
                 </div>

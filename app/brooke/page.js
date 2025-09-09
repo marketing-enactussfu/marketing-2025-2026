@@ -3,33 +3,152 @@ import SponsorImgMed from "../components/sponsorImgMed.js";
 import SponsorImgSmall from "../components/sponsorImgSmall.js";
 import SponsorBanner from "../components/sponsorBanner.js";
 import Button from "../components/button.js";
+import FormField from "../components/formField.js";
 
 function page() {
   const partnerList = [
-    { img: " ", sponsor: "The Old Spaghetti Factory", width: " ", height: " " },
-    { img: " ", sponsor: "Steve's Poke Bar", width: " ", height: " " },
-    { img: " ", sponsor: "The Hive", width: " ", height: " " },
-    { img: " ", sponsor: "Oxygen Yoga & Fitness", width: " ", height: " " },
-    { img: " ", sponsor: "Popeye's Supplements", width: " ", height: " " },
-    { img: " ", sponsor: "Red Bull", width: " ", height: " " },
-    { img: " ", sponsor: "placeholder 1 ", width: " ", height: " " },
-    { img: " ", sponsor: "Vancouver Mysteries", width: " ", height: " " },
-    { img: " ", sponsor: "placeholder 2", width: " ", height: " " },
-    { img: " ", sponsor: "placeholder 3", width: " ", height: " " },
+    {
+      img: "/images/FV1.png",
+      sponsor: "The Old Spaghetti Factory",
+      width: "776",
+      height: "662",
+    },
+    {
+      img: "/images/FV1.png",
+      sponsor: "Steve's Poke Bar",
+      width: "776",
+      height: "662",
+    },
+    {
+      img: "/images/FV1.png",
+      sponsor: "The Hive",
+      width: "776",
+      height: "662",
+    },
+    {
+      img: "/images/FV1.png",
+      sponsor: "Oxygen Yoga & Fitness",
+      width: "776",
+      height: "662",
+    },
+    {
+      img: "/images/FV1.png",
+      sponsor: "Popeye's Supplements",
+      width: "776",
+      height: "662",
+    },
+    {
+      img: "/images/FV1.png",
+      sponsor: "Red Bull",
+      width: "776",
+      height: "662",
+    },
+    {
+      img: "/images/FV1.png",
+      sponsor: "placeholder 1 ",
+      width: "776",
+      height: "662",
+    },
+    {
+      img: "/images/FV1.png",
+      sponsor: "Vancouver Mysteries",
+      width: "776",
+      height: "662",
+    },
+    {
+      img: "/images/FV1.png",
+      sponsor: "placeholder 2",
+      width: "776",
+      height: "662",
+    },
+    {
+      img: "/images/FV1.png",
+      sponsor: "placeholder 3",
+      width: "776",
+      height: "662",
+    },
   ];
 
   const forwardVisionList = [
     {
       img: "/images/FV1.png",
-      sponsor: "Something",
-      width: "800",
-      height: "600",
+      sponsor: "Red Bull",
+      width: "776",
+      height: "662",
     },
     {
       img: "/images/FV1.png",
-      sponsor: "Something 2",
-      width: "800",
-      height: "600",
+      sponsor: "Popeye's Supplements",
+      width: "776",
+      height: "662",
+    },
+    {
+      img: "/images/FV1.png",
+      sponsor: "The Old Spaghetti Factory",
+      width: "776",
+      height: "662",
+    },
+    {
+      img: "/images/FV1.png",
+      sponsor: "Pandora's Locks",
+      width: "776",
+      height: "662",
+    },
+    {
+      img: "/images/FV1.png",
+      sponsor: "placeholder 1",
+      width: "776",
+      height: "662",
+    },
+    {
+      img: "/images/FV1.png",
+      sponsor: "Intelligent Change",
+      width: "776",
+      height: "662",
+    },
+    { img: "/images/FV1.png", sponsor: "Exit", width: "776", height: "662" },
+    {
+      img: "/images/FV1.png",
+      sponsor: "placeholder 2",
+      width: "776",
+      height: "662",
+    },
+    {
+      img: "/images/FV1.png",
+      sponsor: "Promo Sapien",
+      width: "776",
+      height: "662",
+    },
+    {
+      img: "/images/FV1.png",
+      sponsor: "Freesia Soap Company",
+      width: "776",
+      height: "662",
+    },
+    {
+      img: "/images/FV1.png",
+      sponsor: "Baaad Anna's",
+      width: "776",
+      height: "662",
+    },
+    {
+      img: "/images/FV1.png",
+      sponsor: "Nordic Yarn",
+      width: "776",
+      height: "662",
+    },
+    { img: "/images/FV1.png", sponsor: "WCS", width: "776", height: "662" },
+    {
+      img: "/images/FV1.png",
+      sponsor: "placeholder 3",
+      width: "776",
+      height: "662",
+    },
+    {
+      img: "/images/FV1.png",
+      sponsor: "Western Sky Books",
+      width: "776",
+      height: "662",
     },
   ];
 
@@ -53,12 +172,12 @@ function page() {
       <div className="flex flex-col gap-4 mb-12">
         <h1>Our Partners</h1>
 
-        <div className="flex gap-[20px] mb-12 justify-baseline">
+        <div className="flex sm:flex-col lg:flex-row gap-[20px] mb-12 justify-baseline">
           <SponsorBanner
             img="/images/FV1.png"
             sponsor="Enactus Canada"
-            width={800}
-            height={600}
+            width={776}
+            height={662}
           ></SponsorBanner>
 
           <SponsorBanner
@@ -70,7 +189,7 @@ function page() {
         </div>
 
         <div className="flex flex-wrap gap-[20px] mb-[20px] mt-[32px]">
-          {forwardVisionList.map((sponsor) => (
+          {partnerList.map((sponsor) => (
             <SponsorImgMed
               key={sponsor.sponsor}
               img={sponsor.img}
@@ -85,7 +204,7 @@ function page() {
       <div>
         <h1 className="mt-8 mb-8">Our Partners for Forward Vision</h1>
 
-        <div className="flex flex-wrap gap-[20px] mb-[20px]">
+        <div className="flex flex-wrap justify-center gap-4 mb-[20px]">
           {forwardVisionList.map((sponsor) => (
             <SponsorImgSmall
               key={sponsor.sponsor}
@@ -105,6 +224,19 @@ function page() {
           of our staff members will get back to you.
         </h3>
       </div>
+
+      <div className="flex flex-col gap-4 mb-4">
+        <div className="flex gap-4 sm:flex-col md:flex-col lg:grow lg:flex-row">
+          <FormField field="First Name"></FormField>
+          <FormField field="Last Name"></FormField>
+        </div>
+        <FormField field="Phone"></FormField>
+        <FormField field="Email"></FormField>
+        <FormField field="Message"></FormField>
+      </div>
+      <Button size="large" variant="primary" className="mb-12">
+        Submit
+      </Button>
     </div>
   );
 }
