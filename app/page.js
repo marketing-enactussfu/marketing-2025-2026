@@ -1,7 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import { MdAdd, MdBuild, MdConstruction } from "react-icons/md";
+
 import Button from "./components/button";
+import Iconlabel from "./components/iconLabel";
+import CheckLabel from "./components/checkLabel";
+import { Check } from "@mui/icons-material";
 
 function page() {
   const items = [
@@ -22,8 +26,16 @@ function page() {
     },
   ];
 
+  const stats = [
+    { header: "15+", body: "Projects throughout 2012-2025." },
+    { header: "20+", body: "Projects throughout 2012-2025." },
+    { header: "100+", body: "Projects throughout 2012-2025." },
+    { header: "187,000+", body: "Projects throughout 2012-2025." },
+    { header: "15,000+", body: "Projects throughout 2012-2025." },
+  ];
+
   return (
-    <div className="flex flex-col gap-[128px]">
+    <div className="flex flex-col gap-[48px]">
       <section className="flex justify-center relative">
         <Image
           src="/images/hero.png"
@@ -35,29 +47,29 @@ function page() {
         />
 
         {/* Absolutely positioned centered text with golden glow effect */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <h1
-            className="text-white text-center"
-            style={{
-              textShadow:
-                "0 0 20px #FFD700, 0 0 40px #FFD700, 0 0 60px #FFD700",
-            }}
-          >
-            FUELED BY
-            <br />
-            INNOVATIONINGG
+        <div className="absolute inset-0 flex flex-col gap-[27px] items-center justify-center">
+          <h1 className="text-white text-center golden-glow">
+            FUELED BY <br /> INNOVATION
+          </h1>
+
+          <h1 className="text-white text-center golden-glow">
+            LED WITH <br /> PASSION
+          </h1>
+
+          <h1 className="text-white text-center golden-glow">
+            DEFINED BY <br /> EXCELLENCE
           </h1>
         </div>
       </section>
 
-      <section className="section-standard">
+      <section className="section-standard mb-[48px]">
         <div className="flex flex-col gap-[12px]">
           <h2>
             {" "}
             We build projects that create a positive impact on our community.
           </h2>
 
-          <div className="flex flex-col gap-[8px] mt-[12px]">
+          <div className="flex flex-col gap-[8px] mt-[12px] mb-[24px]">
             <h6 className="text-primary-yellow">But what does that mean?</h6>
             <h3>
               {" "}
@@ -76,7 +88,7 @@ function page() {
       </section>
 
       <section className="section-standard">
-        <div className="flex flex-col gap-[24px] w-fill ">
+        {/* <div className="flex flex-col gap-[24px] w-fill ">
           {items.map((item) => {
             const IconComponent = item.icons;
 
@@ -93,6 +105,18 @@ function page() {
               </div>
             );
           })}
+        </div> */}
+      </section>
+
+      <section className="section-standard">
+        <div className="flex flex-col flex-wrap mb-[48px] md:flex-row lg:flex-row gap-[24px] w-fill ">
+          {stats.map((stat) => (
+            <CheckLabel
+              header={stat.header}
+              body={stat.body}
+              key={stat.header}
+            ></CheckLabel>
+          ))}
         </div>
       </section>
     </div>
