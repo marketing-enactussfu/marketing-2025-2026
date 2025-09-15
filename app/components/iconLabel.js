@@ -3,14 +3,14 @@ import BoltIcon from '@mui/icons-material/Bolt';
 
 function iconLabel({ icon, header, body, subheader }) {
     return (
-        <div className='p-[48px] bg-primary-gray rounded-sm flex flex-col gap-[16px]'>
+        <div className='p-[48px] bg-primary-gray rounded-sm flex flex-col gap-[16px] w-full'>
             {icon}
-            {subheader == null ? <h2>{header}</h2> :
+            {subheader == null ? <h4>{header}</h4> :
                 <div className='flex flex-col gap-[8px]'>
-                    <h4 className='text-primary-yellow'>{subheader}</h4>
-                    <h2>{header}</h2>
+                    <h5 className='text-primary-yellow'>{subheader}</h5>
+                    <h4>{header}</h4>
                 </div>
-        }
+            }
             <h3 className="opacity-60">{body}</h3>
         </div>
     )

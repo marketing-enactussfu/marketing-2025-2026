@@ -7,7 +7,9 @@ function Button({
     onClick,
     disabled = false,
     className = '',
-    type = 'button'
+    type = 'button',
+    target,
+    cta,
 }) {
     const baseClasses = 'items-center text-black hover:text-white hover:cursor-pointer ease-in-out duration-[300ms] focus:opacity-[80%] w-fit font-dm-sans font-[600] text-[16px] leading-[1.4]'
 
@@ -31,7 +33,9 @@ function Button({
             disabled={disabled}
             className={buttonClasses}
         >
-            {children}
+            <a href={cta} target={target}>
+                {children}
+            </a>
         </button>
     )
 }
