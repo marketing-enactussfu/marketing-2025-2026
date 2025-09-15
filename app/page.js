@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import { MdAdd, MdBuild, MdConstruction } from "react-icons/md";
+import { MdGroups, MdInterests, MdConstruction } from "react-icons/md";
 
 import Button from "./components/button";
 import Iconlabel from "./components/iconLabel";
 import CheckLabel from "./components/checkLabel";
 import { Check } from "@mui/icons-material";
+import ProjectCard from "./components/projectCard";
 
 function page() {
   const items = [
@@ -17,12 +18,12 @@ function page() {
     {
       label: "Member Engagement",
       body: "Build a welcoming, engaging, and inclusive community for all members.",
-      icons: "MdConstruction",
+      icons: "MdGroups",
     },
     {
       label: "Collective Growth",
       body: "Foster unity and create opportunities for members to make an impact on the community and the club.",
-      icons: "MdConstruction",
+      icons: "MdInterests",
     },
   ];
 
@@ -32,6 +33,32 @@ function page() {
     { header: "100+", body: "Projects throughout 2012-2025." },
     { header: "187,000+", body: "Projects throughout 2012-2025." },
     { header: "15,000+", body: "Projects throughout 2012-2025." },
+  ];
+
+  const projectsTop = [
+    {
+      img: "/images/SkyesCard.png",
+      header: "SKYES",
+      body: "SKYES is an entrepreneurial education initiative that aims to educate underprivileged youth in South and South-East Asia with entrepreneurial education to to help their local communities.",
+    },
+    {
+      img: "/images/UnifyCard.png",
+      header: "Unify",
+      body: "Through access to essential resources, educational tools, and a supportive community, Unify aims to support immigrants, refugees, and international students.",
+    },
+  ];
+
+  const projectsBottom = [
+    {
+      img: "/images/AlaraCard.png",
+      header: "Alara",
+      body: "Alara provides plastic alternatives that promote sustainability and a circular economy by leveraging seaweed to create a 100% compostable bioplastic.",
+    },
+    {
+      img: "/images/NourishCard.png",
+      header: "Nourish",
+      body: "Nourish makes plant-based protein gummies from up-cycled fruit. Packed with protein and fiber, low in sugar, they're a convenient, feel-good snack thats fuels active lifestyles and fights food waste.",
+    },
   ];
 
   return (
@@ -88,28 +115,46 @@ function page() {
       </section>
 
       <section className="section-standard">
-        {/* <div className="flex flex-col gap-[24px] w-fill ">
+        <div className="flex flex-col gap-[20px] w-fill ">
           {items.map((item) => {
             const IconComponent = item.icons;
 
             return (
               <div
-                className="flex flex-row gap-[24px] bg-primary-gray px-[24px] py-[24px] w-fill h-fit rounded-lg"
+                className="flex flex-row gap-12 bg-primary-gray px-[24px] py-[24px] w-fill h-fit rounded-lg"
                 key={item.label}
               >
-                <IconComponent className="text-xl" />
+                {IconComponent === "MdConstruction" ? (
+                  <MdConstruction
+                    size={50}
+                    color={"var(--color-primary-red)"}
+                  />
+                ) : (
+                  ""
+                )}
+                {IconComponent === "MdGroups" ? (
+                  <MdGroups size={50} color={"var(--color-primary-red)"} />
+                ) : (
+                  ""
+                )}
+                {IconComponent === "MdInterests" ? (
+                  <MdInterests size={50} color={"var(--color-primary-red)"} />
+                ) : (
+                  ""
+                )}
+
                 <div className="flex flex-col gap-2 text-white">
-                  <h4>{item.label} </h4>
+                  <h2>{item.label} </h2>
                   <p> {item.body}</p>
                 </div>
               </div>
             );
           })}
-        </div> */}
+        </div>
       </section>
 
       <section className="section-standard">
-        <div className="flex flex-col flex-wrap mb-[48px] md:flex-row lg:flex-row gap-[24px] w-fill ">
+        <div className="flex flex-col flex-wrap mb-[48px] md:flex-row lg:flex-row gap-[20px]">
           {stats.map((stat) => (
             <CheckLabel
               header={stat.header}
@@ -118,6 +163,39 @@ function page() {
             ></CheckLabel>
           ))}
         </div>
+      </section>
+
+      <section className="max-[74rem]:section-standard flex flex-col mb-[48px] gap-[20px]">
+        <div className="flex flex-col min-[74rem]:flex-row gap-[20px]">
+          {projectsTop.map((project) => (
+            <ProjectCard
+              img={project.img}
+              header={project.header}
+              body={project.body}
+              key={project.header}
+            ></ProjectCard>
+          ))}
+        </div>
+        <div className="flex flex-col min-[74rem]:flex-row gap-[20px]">
+          {projectsBottom.map((project) => (
+            <ProjectCard
+              img={project.img}
+              header={project.header}
+              body={project.body}
+              key={project.header}
+            ></ProjectCard>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <Image
+          src="/images/CompetitionCheer.png"
+          alt="Enact"
+          width={1200}
+          height={1200}
+          className="w-[100%] h-auto"
+        />
       </section>
     </div>
   );
