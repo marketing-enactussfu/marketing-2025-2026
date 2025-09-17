@@ -121,7 +121,7 @@ function page() {
 
             return (
               <div
-                className="flex flex-row gap-12 bg-primary-gray px-[24px] py-[24px] w-fill h-fit rounded-lg"
+                className="flex flex-col gap-6 md:flex-row md:gap-12 bg-primary-gray px-[24px] py-[24px] w-fill h-fit rounded-[16px]"
                 key={item.label}
               >
                 {IconComponent === "MdConstruction" ? (
@@ -154,7 +154,7 @@ function page() {
       </section>
 
       <section className="section-standard">
-        <div className="flex flex-col flex-wrap mb-[48px] md:flex-row lg:flex-row gap-[20px]">
+        <div className="flex flex-row flex-wrap min-[83rem]:flex-nowrap grow mb-[48px] gap-[20px] w-fill">
           {stats.map((stat) => (
             <CheckLabel
               header={stat.header}

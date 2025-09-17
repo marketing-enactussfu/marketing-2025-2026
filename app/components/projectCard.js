@@ -3,13 +3,13 @@ import Image from "next/image";
 
 function projectCard({ img, header, body }) {
   return (
-    <div className="relative w-max flex flex-grow align-center rounded-[16px]">
+    <div className="relative w-fill flex flex-grow align-center rounded-[16px]">
       <Image
         src={img}
         alt={header}
         width="1200"
         height="1200"
-        className="w-[calc(100%)] h-auto"
+        className="w-100% h-auto"
       />
 
       <div className="absolute inset-0 bg-no-repeat bg-black/60 hover:bg-black/30 p-[96px] flex flex-col align-center justify-center">
