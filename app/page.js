@@ -75,15 +75,15 @@ function page() {
 
         {/* Absolutely positioned centered text with golden glow effect */}
         <div className="absolute inset-0 flex flex-col gap-[27px] items-center justify-center">
-          <h1 className="text-white text-center golden-glow">
+          <h1 className="hero-text text-white text-center golden-glow">
             FUELED BY <br /> INNOVATION
           </h1>
 
-          <h1 className="text-white text-center golden-glow">
+          <h1 className="hero-text text-white text-center golden-glow">
             LED WITH <br /> PASSION
           </h1>
 
-          <h1 className="text-white text-center golden-glow">
+          <h1 className="hero-text text-white text-center golden-glow">
             DEFINED BY <br /> EXCELLENCE
           </h1>
         </div>
@@ -154,7 +154,7 @@ function page() {
       </section>
 
       <section className="section-standard">
-        <div className="flex flex-row flex-wrap min-[83rem]:flex-nowrap grow mb-[48px] gap-[20px] w-fill">
+        <div className="flex flex-row flex-wrap grow min-[83rem]:flex-nowrap mb-[48px] gap-[20px]">
           {stats.map((stat) => (
             <CheckLabel
               header={stat.header}

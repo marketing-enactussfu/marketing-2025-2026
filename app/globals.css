@@ -110,3 +110,7 @@ label {
 .golden-glow {
   text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 20px #ffd700;
 }
+
+.hero-text {
+  font-size: 4vw;
+}
