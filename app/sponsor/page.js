@@ -8,64 +8,58 @@ import FormField from "../components/formField.js";
 function page() {
   const partnerList = [
     {
-      img: "/images/FV1.png",
-      sponsor: "The Old Spaghetti Factory",
-      width: "776",
-      height: "662",
+      img: "/images/Redbull.png",
+      sponsor: "RedBull",
+      width: "696",
+      height: "696",
     },
     {
-      img: "/images/FV1.png",
-      sponsor: "Steve's Poke Bar",
-      width: "776",
-      height: "662",
+      img: "/images/idance.jpg",
+      sponsor: "iDance",
+      width: "512",
+      height: "512",
     },
     {
-      img: "/images/FV1.png",
-      sponsor: "The Hive",
-      width: "776",
-      height: "662",
+      img: "/images/ipop.jpg",
+      sponsor: "iPop",
+      width: "857",
+      height: "398",
     },
     {
-      img: "/images/FV1.png",
-      sponsor: "Oxygen Yoga & Fitness",
-      width: "776",
-      height: "662",
+      img: "/images/ModoYoga.jpg",
+      sponsor: "Modo Yoga",
+      width: "1600",
+      height: "345",
     },
     {
-      img: "/images/FV1.png",
-      sponsor: "Popeye's Supplements",
-      width: "776",
-      height: "662",
+      img: "/images/RumbleBoxing.jpg",
+      sponsor: "Rumble Boxing",
+      width: "300",
+      height: "300",
     },
     {
-      img: "/images/FV1.png",
-      sponsor: "Red Bull",
-      width: "776",
-      height: "662",
+      img: "/images/SkoahFacialShop.jpg",
+      sponsor: "Skoah.",
+      width: "1084",
+      height: "834",
     },
     {
-      img: "/images/FV1.png",
-      sponsor: "placeholder 1 ",
-      width: "776",
-      height: "662",
+      img: "/images/VancouverWaterAdventures.jpg",
+      sponsor: "Vancouver Water Adventures",
+      width: "550",
+      height: "550",
     },
     {
-      img: "/images/FV1.png",
-      sponsor: "Vancouver Mysteries",
-      width: "776",
-      height: "662",
+      img: "/images/VCClogo.avif",
+      sponsor: "Varshney Capital Corp",
+      width: "160",
+      height: "116",
     },
     {
-      img: "/images/FV1.png",
-      sponsor: "placeholder 2",
-      width: "776",
-      height: "662",
-    },
-    {
-      img: "/images/FV1.png",
-      sponsor: "placeholder 3",
-      width: "776",
-      height: "662",
+      img: "/images/VELLUMWELLNESS.jpg",
+      sponsor: "Vellum Wellness",
+      width: "333",
+      height: "113",
     },
   ];
 
@@ -174,21 +168,21 @@ function page() {
 
         <div className="flex sm:flex-col lg:flex-row gap-[20px] mb-12 justify-baseline">
           <SponsorBanner
-            img="/images/FV1.png"
+            img="/images/EnactusLogo.png"
             sponsor="Enactus Canada"
-            width={776}
-            height={662}
+            width={457}
+            height={200}
           ></SponsorBanner>
 
           <SponsorBanner
-            img="/images/hero.png"
+            img="/images/BeedieLogo.png"
             sponsor="SFU Beedie School of Business"
-            width={1921}
-            height={900}
+            width={798}
+            height={150}
           ></SponsorBanner>
         </div>
 
-        <div className="flex flex-wrap gap-[20px] mb-[20px] mt-[32px]">
+        <div className="flex flex-wrap justify-center gap-[16px] md:gap-[20px] mb-[20px] mt-[32px]">
           {partnerList.map((sponsor) => (
             <SponsorImgMed
               key={sponsor.sponsor}
@@ -204,7 +198,7 @@ function page() {
       <div>
         <h1 className="mt-8 mb-8">Our Partners for Forward Vision</h1>
 
-        <div className="flex flex-wrap justify-center gap-4 mb-[20px]">
+        <div className="flex flex-wrap justify-center gap-[16px] md:gap-[20px] mb-[20px]">
           {forwardVisionList.map((sponsor) => (
             <SponsorImgSmall
               key={sponsor.sponsor}

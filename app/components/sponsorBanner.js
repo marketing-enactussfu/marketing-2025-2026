@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function sponsorBanner({ img, sponsor, width, height }) {
   return (
-    <div className="flex flex-col gap-[1.6rem] items-center bg-primary-gray rounded-[16px] p-[1.6rem] w-[50%] text-white">
+    <div className="flex flex-col w-full md:w-[50%] gap-[1.6rem] justify-end items-center bg-primary-gray rounded-[16px] p-[1.6rem] text-white">
       <Image
         src={img}
         alt={sponsor}
