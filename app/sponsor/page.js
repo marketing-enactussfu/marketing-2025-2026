@@ -44,12 +44,6 @@ function page() {
       height: "834",
     },
     {
-      img: "/images/VancouverWaterAdventures.jpg",
-      sponsor: "Vancouver Water Adventures",
-      width: "550",
-      height: "550",
-    },
-    {
       img: "/images/VCClogo.avif",
       sponsor: "Varshney Capital Corp",
       width: "160",
@@ -61,85 +55,91 @@ function page() {
       width: "333",
       height: "113",
     },
+    {
+      img: "/images/VancouverWaterAdventures.jpg",
+      sponsor: "Vancouver Water Adventures",
+      width: "550",
+      height: "550",
+    },
   ];
 
   const forwardVisionList = [
     {
-      img: "/images/FV1.png",
-      sponsor: "Red Bull",
-      width: "776",
-      height: "662",
+      img: "/images/Redbull.png",
+      sponsor: "RedBull",
+      width: "696",
+      height: "696",
     },
     {
-      img: "/images/FV1.png",
+      img: "/images/Popeyes.png",
       sponsor: "Popeye's Supplements",
-      width: "776",
-      height: "662",
+      width: "540",
+      height: "539",
     },
     {
-      img: "/images/FV1.png",
+      img: "/images/OldSpaghetti.png",
       sponsor: "The Old Spaghetti Factory",
-      width: "776",
-      height: "662",
+      width: "546",
+      height: "545",
     },
     {
-      img: "/images/FV1.png",
+      img: "/images/PandorasLocks.png",
       sponsor: "Pandora's Locks",
-      width: "776",
-      height: "662",
+      width: "213",
+      height: "173",
     },
     {
-      img: "/images/FV1.png",
-      sponsor: "placeholder 1",
-      width: "776",
-      height: "662",
+      img: "/images/VMMLogo.png",
+      sponsor: "Vancouver Maritime Museum",
+      width: "546",
+      height: "545",
     },
     {
-      img: "/images/FV1.png",
+      img: "/images/IntelligentChange.png",
       sponsor: "Intelligent Change",
-      width: "776",
-      height: "662",
+      width: "540",
+      height: "540",
     },
-    { img: "/images/FV1.png", sponsor: "Exit", width: "776", height: "662" },
+    { img: "/images/Exit.png", sponsor: "Exit", width: "540", height: "540" },
     {
-      img: "/images/FV1.png",
-      sponsor: "placeholder 2",
-      width: "776",
-      height: "662",
+      img: "/images/THLogo.png",
+      sponsor: "TH",
+      width: "540",
+      height: "540",
     },
     {
-      img: "/images/FV1.png",
+      img: "/images/PromoSapien.png",
       sponsor: "Promo Sapien",
-      width: "776",
-      height: "662",
+      width: "540",
+      height: "540",
     },
     {
-      img: "/images/FV1.png",
+      img: "/images/Freesia.png",
       sponsor: "Freesia Soap Company",
-      width: "776",
-      height: "662",
+      width: "540",
+      height: "540",
     },
     {
-      img: "/images/FV1.png",
+      img: "/images/BaaadAnnas.png",
       sponsor: "Baaad Anna's",
-      width: "776",
-      height: "662",
+      width: "540",
+      height: "540",
     },
     {
-      img: "/images/FV1.png",
+      img: "/images/NordicYarn.png",
       sponsor: "Nordic Yarn",
+      width: "540",
+      height: "540",
+    },
+    { img: "/images/WCSLogo.png", sponsor: "WCS", width: "776", height: "662" },
+    {
+      img: "/images/ULogo.png",
+      sponsor: "U",
       width: "776",
       height: "662",
     },
-    { img: "/images/FV1.png", sponsor: "WCS", width: "776", height: "662" },
     {
-      img: "/images/FV1.png",
-      sponsor: "placeholder 3",
-      width: "776",
-      height: "662",
-    },
-    {
-      img: "/images/FV1.png",
+      img: "/images/WesternSkyBooks.png",
       sponsor: "Western Sky Books",
       width: "776",
       height: "662",
@@ -166,7 +166,7 @@ function page() {
       <div className="flex flex-col gap-4 mb-12">
         <h1>Our Partners</h1>
 
-        <div className="flex sm:flex-col lg:flex-row gap-[20px] mb-12 justify-baseline">
+        <div className="flex flex-col md:flex-row gap-[20px] mb-12 justify-baseline">
           <SponsorBanner
             img="/images/EnactusLogo.png"
             sponsor="Enactus Canada"
