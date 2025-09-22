@@ -1,25 +1,60 @@
 import React from "react";
 import Image from "next/image";
-import { MdBuild, MdFavourite, MdConstruction } from "react-icons/md";
+import { MdBuild, MdFavorite, MdTrendingUp } from "react-icons/md";
 
 function page() {
   const items = [
     {
       label: "Mission",
       body: "A community of changemakers using entrepreneurship to address social, economic, and environmental needs. We aim to create measurable impact on others' lives.",
-      icons: "MdBuild",
+      icons: "MdTrendingUp",
     },
     {
       label: "Vision",
       body: "To be student leaders who inspire positive change through innovation and social entrepreneurship to create a sustainable world.",
-      icons: "MdFavourite",
+      icons: "MdFavorite",
     },
   ];
 
-  const goals = [];
+  const goals = [
+    { goal: "No poverty", img: "/images/goal1.png" },
+    { goal: "Good health and wellbeing", img: "/images/goal3.png" },
+    { goal: "Quality education", img: "/images/goal4.png" },
+    { goal: "Clean water and sanitation", img: "/images/goal6.png" },
+    { goal: "Decent work and economic growth", img: "/images/goal8.png" },
+    { goal: "Reduced inequalities", img: "/images/goal10.png" },
+    { goal: "Sustainabile cities and communities", img: "/images/goal11.png" },
+    {
+      goal: "Responsible consumption and production",
+      img: "/images/goal12.png",
+    },
+    { goal: "Climate action", img: "/images/goal13.png" },
+    { goal: "Life below water", img: "/images/goal14.png" },
+  ];
+
+  const images = [
+    {
+      alt: "A crowd of students cheering.",
+      img: "/images/CrowdCheer.png",
+      width: "572",
+      height: "800",
+    },
+    {
+      alt: "People posing for a photo in front of a wall with the Enactus logo.",
+      img: "/images/EnactusWall.png",
+      width: "578",
+      height: "800",
+    },
+    {
+      alt: "Three people cheering.",
+      img: "/images/Cheer.png",
+      width: "727",
+      height: "800",
+    },
+  ];
 
   return (
-    <div>
+    <div className="flex flex-col gap-[16px]">
       <section className="flex flex-col gap-[16px] md:gap-[48px] mb-[16px] md:mb-[48px]">
         <div className="section-standard flex flex-col gap-[16px]">
           <h1>
@@ -71,7 +106,22 @@ function page() {
         </div>
       </section>
 
-      <section className="section-standard">
+      <section className="section-standard mb-[16px]">
+        <div className="flex flex-col md:flex-row flex-wrap gap-[4px] md:gap-[16px] lg:gap-[24px]">
+          {images.map((img) => (
+            <Image
+              key={img.alt}
+              src={img.img}
+              alt={img.alt}
+              width={img.width}
+              height={img.height}
+              className="object-cover min-h-[270px] h-full w-auto md:w-[calc(33%-12px)] md:h-auto lg:w-[calc(33%-15px)]"
+            ></Image>
+          ))}
+        </div>
+      </section>
+
+      <section className="section-standard mt-[24px] mb-[24px] md:mb-[48px] md:mt-[48px]">
         <div className="flex flex-col gap-[16px] mb-[24px] md:mb-[48px] mt-auto">
           <h1 className="text-primary-yellow">Our Target SDG Goals</h1>
           <h2>
@@ -80,34 +130,37 @@ function page() {
           </h2>
         </div>
 
-        <div></div>
+        <div className="flex flex-row flex-wrap mt-[24px] md:mt-[48px] gap-[12px] md:gap-[16px] lg:gap-[24px]">
+          {goals.map((goal) => (
+            <Image
+              key={goal.goal}
+              src={goal.img}
+              alt={goal.goal}
+              width={600}
+              height={600}
+              className="h-auto w-[calc(50%-6px)] md:w-[calc(20%-20px)]"
+            ></Image>
+          ))}
+        </div>
       </section>
 
-      {/* <section className="section-standard">
-        <div className="flex flex-col gap-[20px] w-fill ">
+      <section className="section-standard mb-[24px] md:mb-[48px]">
+        <div className="flex flex-col md:flex-row gap-[16px] md:gap-[20px] w-fill ">
           {items.map((item) => {
             const IconComponent = item.icons;
 
             return (
               <div
-                className="flex flex-col gap-6 md:flex-row md:gap-12 bg-primary-gray px-[24px] py-[24px] w-fill h-fit rounded-[16px]"
+                className="flex flex-col gap-6 md:gap-[16px] bg-primary-gray px-[24px] py-[24px] w-fill md:w-[50%] h-auto rounded-[16px]"
                 key={item.label}
               >
-                {IconComponent === "MdConstruction" ? (
-                  <MdConstruction
-                    size={50}
-                    color={"var(--color-primary-red)"}
-                  />
+                {IconComponent === "MdTrendingUp" ? (
+                  <MdTrendingUp size={50} color={"var(--color-primary-red)"} />
                 ) : (
                   ""
                 )}
-                {IconComponent === "MdBuild" ? (
-                  <MdBuild size={50} color={"var(--color-primary-red)"} />
-                ) : (
-                  ""
-                )}
-                {IconComponent === "MdFavourite" ? (
-                  <MdFavourite size={50} color={"var(--color-primary-red)"} />
+                {IconComponent === "MdFavorite" ? (
+                  <MdFavorite size={50} color={"var(--color-primary-red)"} />
                 ) : (
                   ""
                 )}
@@ -120,7 +173,7 @@ function page() {
             );
           })}
         </div>
-      </section> */}
+      </section>
     </div>
   );
 }
