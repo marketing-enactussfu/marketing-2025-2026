@@ -12,7 +12,7 @@ function Navbar() {
         { label: "Projects", link: "/projects" },
         { label: "Events", link: "/events" },
         { label: "Sponsorships", link: "/sponsor" },
-        { label: "Competitors", link: "/competitors" },
+        { label: "Competition", link: "/competition" },
     ];
 
     return (
