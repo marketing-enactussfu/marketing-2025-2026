@@ -8,11 +8,11 @@ function Navbar() {
     const navItems = [
         { label: "Home", link: "/" },
         { label: "About", link: "/about" },
-        { label: "History", link: "/history" },
+        { label: "Team", link: "/team" },
         { label: "Projects", link: "/projects" },
         { label: "Events", link: "/events" },
-        { label: "Sponsorships", link: "/sponsorships" },
-        { label: "Competitors", link: "/competitors" },
+        { label: "Sponsorships", link: "/sponsor" },
+        { label: "Competition", link: "/competition" },
     ];
 
     return (

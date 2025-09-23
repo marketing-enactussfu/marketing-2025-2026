@@ -3,6 +3,7 @@
 import React from 'react'
 import Icon from '@mdi/react'
 import { mdiInstagram, mdiLinkedin, mdiEmailOutline } from '@mdi/js'
+import Button from "../components/button"
 import { DM_Sans } from 'next/font/google'
 import Image from 'next/image'
 
@@ -22,32 +23,32 @@ function Footer() {
 
     return (
         <footer className={`${dmSans.variable} bg-[#121212]`}>
-            <div className="mx-auto max-w-[1200px] px-6 pt-16 pb-10">
+            <div className="mx-[100px] pt-16 pb-10">
                 {/* Top row: Brand + Subscribe */}
-                <div className="flex flex-row gap-8 md:items-start md:justify-between min-h-[400px] w-full">
+                <div className="flex flex-col lg:flex-row gap-8 md:items-start md:justify-between h-[40vh] w-full">
 
-                    <div className="flex flex-col gap-6 items-right flex-1">
-                        <div className="flex items-end gap-[25.735px] min-w-fit">
+                    <div className="flex flex-col  min-h-full h-full justify-between max-w-full lg:max-w-[30%]">
+                        <div className="flex items-end gap-[18px] w-fit h-auto">
 
                             <Image
                                 src="/images/logo.svg"
                                 alt="Enactus SFU Logo"
                                 width={200}
                                 height={64}
-                                className="h-16 w-auto"
+                                className="w-[4vw] h-auto"
                             />
                             <div
-                                className="text-[52px] font-bold leading-[1.1] tracking-[-0.025em] whitespace-nowrap text-white">
+                                className="text-[3vw] text-[#FFD156] font-bold leading-[1.1] tracking-[-0.025em] whitespace-nowrap">
                                 Enactus SFU
                             </div>
                         </div>
-                        <p className="max-w-[538px] text-[14px] leading-relaxed text-[#D4D4D4]">
+                        <p className="max-w-[538px] text-[14px] leading-relaxed text-[#D4D4D4] mt-[12px] ">
                             Enactus is a social entrepreneurship organization that focuses on creating projects that impact with a
                             focus of sustainability, economic empowerment, and growth.
                         </p>
 
-                        <div className=' flex-1 flex flex-col justify-between'>
-                            <div className="flex items-center gap-6">
+                        <div className=' flex-1 flex flex-col w-full h-full justify-end '>
+                            <div className="flex items-center gap-6  py-[16px] ">
                                 {/* Instagram */}
                                 <a href="https://www.instagram.com/enactussfu/" aria-label="Instagram" className="group">
                                     <div className="grid h-[40px] w-[40px] place-items-center rounded-full bg-[#262626]">
@@ -68,11 +69,11 @@ function Footer() {
                                 </button>
                             </div>
 
-                            <div className='flex flex-col'>
-                                <div className="text-[20px] font-medium tracking-[-0.015em] text-[#737373]">
+                            <div className='flex flex-col h-fit'>
+                                <div className="text-[16px] font-medium tracking-[-0.015em] text-[#737373]">
                                     Copyright © Enactus {currentYear}. All rights reserved.
                                 </div>
-                                <div className="flex items-center gap-4 text-[20px] font-medium tracking-[-0.015em] text-[#F5F5F5]">
+                                <div className="flex items-center gap-4 text-[16px] font-medium tracking-[-0.015em] text-[#F5F5F5]">
                                     <a href="#" className="transition ease-in-out duration-100 hover:underline hover:cursor-pointer">Privacy Policy</a>
                                     <span>|</span>
                                     <a href="#" className="transition ease-in-out duration-100 hover:underline hover:cursor-pointer">Land Acknowledgment</a>
@@ -81,15 +82,18 @@ function Footer() {
                         </div>
                     </div>
 
-                    <div className=''>
-                        <button> Email Button </button>
+                    <div className=' flex flex-col gap-[12px] justify-right'>
+                        <h5 className='text-[#FFC220] font-bold'> Sign up for our Newsletter!</h5>
+                        < Button size='large' style='primary' target="_blank" cta="https://mailchi.mp/962e35d5baa4/enactus-sfu-mailchimp-sign-up">
+                            Sign Up
+                        </Button>
                     </div>
 
                     {/* Link columns */}
-                    <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
+                    <div className="grid grid-cols-1 gap-[12px] md:grid-cols-4 max-w-[100%] lg:max-w-[40%] w-full  h-fit">
                         {/* Organization */}
                         <div className="space-y-4">
-                            <div className="text-[20px] font-semibold tracking-[-0.025em] text-[#FFC220]">Organization</div>
+                            <div className="text-[14px] font-semibold tracking-[-0.025em] text-[#FFC220]">Organization</div>
                             <div className="space-y-4 text-[14px] text-[#D4D4D4] flex flex-col">
                                 {['The Team', 'About Us', 'History', 'Awards'].map((label) => (
                                     <a key={label} href="#" className="transition ease-in-out duration-100 hover:underline hover:cursor-pointer">
@@ -101,7 +105,7 @@ function Footer() {
 
                         {/* Projects */}
                         <div className="space-y-4">
-                            <div className="text-[20px] font-semibold tracking-[-0.025em] text-[#FFC220]">Projects</div>
+                            <div className="text-[14px] font-semibold tracking-[-0.025em] text-[#FFC220]">Projects</div>
                             <div className="space-y-4 text-[14px] text-[#D4D4D4] flex flex-col">
                                 {['Unify', 'SKYES', 'Alara', 'Nourish', 'NextSpark'].map((label) => (
                                     <a key={label} href="#" className="transition ease-in-out duration-100 hover:underline hover:cursor-pointer">
@@ -111,9 +115,9 @@ function Footer() {
                             </div>
                         </div>
 
-                        {/* Past Projects */}
+
                         <div className="space-y-4">
-                            <div className="text-[20px] font-semibold tracking-[-0.025em] text-[#FFC220]">Past Projects</div>
+                            <div className="text-[14px] font-semibold tracking-[-0.025em] text-[#FFC220]">Past Projects</div>
                             <div className="space-y-4 text-[14px] text-[#D4D4D4] flex flex-col">
                                 {[
                                     'Kindred Knots',
@@ -134,7 +138,7 @@ function Footer() {
 
                         {/* Get Involved */}
                         <div className="space-y-4">
-                            <div className="text-[20px] font-semibold tracking-[-0.025em] text-[#FFC220]">Get Involved</div>
+                            <div className="text-[14px] font-semibold tracking-[-0.025em] text-[#FFC220]">Get Involved</div>
                             <div className="space-y-4 text-[14px] text-[#D4D4D4] flex flex-col">
                                 {['Careers', 'Sponsor Us', 'Contact Us'].map((label) => (
                                     <a key={label} href="#" className="transition ease-in-out duration-100 hover:underline hover:cursor-pointer">
@@ -146,7 +150,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer >
     )
 }
 
