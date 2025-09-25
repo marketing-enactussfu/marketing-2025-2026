@@ -4,7 +4,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Image from "next/image";
 
-function imglabel({ header, body, cta1, cta2, instagram, linkedin, img }) {
+function imglabel({ header, body, cta1, cta1link, cta2, cta2link, instagram, linkedin, img }) {
     return (
         <div className='bg-primary-gray flex flex-col gap-[32px] p-[48px] w-[100%] h-auto rounded-[16px]'>
             <Image
@@ -23,17 +23,17 @@ function imglabel({ header, body, cta1, cta2, instagram, linkedin, img }) {
 
                 {cta2 == null ?
                     <div className='flex flex-row gap-[24px]'>
-                        < Button size='large' style='primary'>
+                        < Button size='large' style='primary' cta={cta1link}>
                             {cta1}
                         </Button>
 
                     </div>
                     :
                     <div className='flex flex-row gap-[24px]'>
-                        < Button size='large' style='primary'>
+                        < Button size='large' style='primary' cta={cta1link}>
                             {cta1}
                         </Button>
-                        < Button size='large' style='primary'>
+                        < Button size='large' style='primary' cta={cta2link}>
                             {cta2}
                         </Button>
                     </div>

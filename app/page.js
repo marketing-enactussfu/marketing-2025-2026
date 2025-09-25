@@ -108,7 +108,7 @@ function page() {
             </h3>
           </div>
 
-          <Button size="large" style="primary">
+          <Button size="large" style="primary" cta="/about">
             Our Story
           </Button>
         </div>

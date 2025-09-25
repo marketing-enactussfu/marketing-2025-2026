@@ -50,7 +50,7 @@ function page() {
 
                 <h2>If the idea of social entrepreneurship excites you, we encourage you to participate in Forward Vision! Spots are limited, so be sure to register your team before the deadline on A DATE.</h2>
 
-                <Link href="/">< Button size='large' style='primary'> ← Return to Events </Button></Link>
+                <Button size='large' style='primary' cta="./events"> ← Return to Events </Button>
 
                 <ImgCarousel />
             </div>

@@ -44,7 +44,7 @@ function page() {
                     priority
                 />
 
-                <Link href="/">< Button size='large' style='primary'> ← Return to Events </Button></Link>
+                <Button size='large' style='primary' cta="./events"> ← Return to Events </Button>
             </div>
         </div>
     )
