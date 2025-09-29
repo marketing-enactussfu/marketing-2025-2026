@@ -21,11 +21,11 @@ function page() {
 
       <div className="section-standard gap-[16px] md:gap-[24px]">
         <h2> More about Venture Connect </h2>
-        <p className="text-primary-yellow">
+        <h3 className="text-primary-yellow">
           Discover our educational workshops hosted by Enactus SFU, connect with
           like-minded individuals, and learn about sustainable social
           entrepreneurship.
-        </p>
+        </h3>
       </div>
 
       <section className="px-[100px] flex flex-col md:flex-row gap-[16px] md:gap-[24px]">
@@ -58,7 +58,7 @@ function page() {
           priority
         />
 
-        <div className="flex justify-center">
+        <div className="flex justify-center md:justify-normal pb-[24px]">
           <Button size="large" style="primary" cta="./events">
             {" "}
             ← Return to Events{" "}
