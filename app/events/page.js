@@ -4,13 +4,13 @@ import ImgLabel from "../components/imglabel";
 
 function page() {
   return (
-    <div className="flex flex-col gutter gap-[48px]">
+    <div className="flex flex-col padding py-[24px] md:py-[48px] gap-[48px]">
       <Header
         header="Our Events"
         body="Discover our educational workshops hosted by Enactus SFU, connect with like-minded individuals, and learn about sustainable social entrepreneurship."
       ></Header>
 
-      <div className="flex flex-col md:flex-row gap-[16px] md:gap-[24px] w-full  overflow-hidden">
+      <div className="flex flex-col md:flex-row gap-[16px] md:gap-[24px] w-full overflow-hidden">
         <ImgLabel
           header="Forward Vision"
           body="Showcase your entrepreneurial spirit and skills in our very own competition! Competitors will be tested on their entrepreneurship, social enterprise, and the practical application of their idea that positively impacts society in a pitch style."

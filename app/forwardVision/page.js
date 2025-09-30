@@ -55,7 +55,7 @@ function page() {
         />
       </section>
 
-      <div className="flex flex-col gap-[24px] md:gap-[48px] px-[100px]">
+      <div className="flex flex-col gap-[24px] md:gap-[48px] padding">
         <Image
           src={"/images/VentureConnect3.png"}
           alt={"Venture Connect Banner"}

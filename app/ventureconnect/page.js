@@ -28,7 +28,7 @@ function page() {
         </h3>
       </div>
 
-      <section className="px-[100px] flex flex-col md:flex-row gap-[16px] md:gap-[24px]">
+      <section className="padding flex flex-col md:flex-row gap-[16px] md:gap-[24px]">
         <IconLabel
           header={"Meaningful Connections"}
           subheader={"Event Objective"}
@@ -48,7 +48,7 @@ function page() {
         />
       </section>
 
-      <div className="flex flex-col gap-[24px] px-[100px]">
+      <div className="flex flex-col gap-[24px] padding">
         <Image
           src={"/images/VentureConnect3.png"}
           alt={"Venture Connect Banner"}

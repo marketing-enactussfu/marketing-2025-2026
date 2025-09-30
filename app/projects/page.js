@@ -119,7 +119,7 @@ function page() {
   ];
 
   return (
-    <div className="flex flex-col gutter gap-[24px] md:gap-[64px]">
+    <div className="flex flex-col gutter gap-[24px] md:gap-[48px] lg:gap-[64px]]">
       <Header
         header="Projects"
         body="What we're currently working on."
