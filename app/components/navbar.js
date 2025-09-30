@@ -4,7 +4,9 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Button from "./button";
 import Link from "next/link";
-import { MdConstruction, MdDensitySmall } from "react-icons/md";
+import { Icon } from '@mdi/react';
+import { mdiPlus } from '@mdi/js';
+import { MdDensitySmall } from "react-icons/md";
 
 function Navbar() {
     const navItems = [
@@ -54,10 +56,10 @@ function Navbar() {
 
 
                 <div className="hidden w-full lg:flex flex-row justify-end">
-                    <Button size="small" variant="icon">
+                    <Button size="small" variant="icon" cta="https://www.instagram.com/enactussfu/" target="_blank">
                         <div className="flex flex-row gap-2">
-                            <MdConstruction className="text-xl" />
-                            CTA
+                            <Icon path={mdiPlus} size={1} />
+                            Join our Team
                         </div>
                     </Button>
                 </div>

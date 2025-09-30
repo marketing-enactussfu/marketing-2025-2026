@@ -11,7 +11,7 @@ function imgHero({ img, header, subheader, cta1, cta2 }) {
           alt={img}
           width={1920}
           height={1080}
-          className="w-full h-auto"
+          className="w-full h-fit"
           priority
         />
 
