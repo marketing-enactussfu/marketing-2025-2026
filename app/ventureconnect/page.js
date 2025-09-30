@@ -4,6 +4,7 @@ import ImgHero from '../components/imgHero'
 import Image from "next/image"
 import { MdPeople, MdHandshake } from "react-icons/md";
 import Button from "../components/button"
+import ImgCarousel from '../components/imgCarousel';
 
 
 function page() {
@@ -49,13 +50,13 @@ function page() {
       </section>
 
       <div className="flex flex-col gap-[24px] padding">
-        <Image
-          src={"/images/VentureConnect3.png"}
-          alt={"Venture Connect Banner"}
-          width={1920}
-          height={1080}
-          className="w-full h-auto"
-          priority
+        <ImgCarousel
+          Carousel=
+          {
+            [{ name: "NEED A NEW PHOTO", img: "/images/VentureConnect.png" },
+            { name: "NEED A NEW PHOTO", img: "/images/VentureConnect 2.png" },
+            { name: "Good Photo", img: "/images/VentureConnect3a.png" }]
+          }
         />
 
         <div className="flex justify-center md:justify-normal pb-[24px]">

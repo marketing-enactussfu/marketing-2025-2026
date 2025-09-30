@@ -56,7 +56,7 @@ function page() {
 
       <div className="flex flex-col gap-[24px] md:gap-[48px] padding">
         <Image
-          src={"/images/VentureConnect3.png"}
+          src={"/images/ForwardVision.png"}
           alt={"Venture Connect Banner"}
           width={1920}
           height={1080}
@@ -76,15 +76,9 @@ function page() {
             ← Return to Events{" "}
           </Button>
         </div>
-
-        <ImgCarousel />
-      </div>
-    </div>
+      </div >
+    </div >
   );
-                <ImgCarousel Carousel={[]} />
-            </div>
-        </div>
-    )
 }
 
 export default page;

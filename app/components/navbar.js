@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Button from "./button";
 import Link from "next/link";
-import { MdAdd, MdBuild, MdConstruction, MdDensitySmall } from "react-icons/md";
+import { MdConstruction, MdDensitySmall } from "react-icons/md";
 
 function Navbar() {
     const navItems = [
@@ -42,6 +42,7 @@ function Navbar() {
                                 key={item.label}
                                 href={item.link}
                                 className="opacity-60 hover:opacity-100 text-white leading-none transition-all"
+                                onClick={() => setOpen(false)}
                             >
                                 <h5>{item.label}</h5>
                             </Link>

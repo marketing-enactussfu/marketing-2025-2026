@@ -5,7 +5,7 @@ import Button from "../components/button";
 function imgHero({ img, header, subheader, cta1, cta2 }) {
   return (
     <div>
-      <section className="flex justify-center relative">
+      <section className="flex justify-center relative lg:h-fit h-[40vh]">
         <Image
           src={img}
           alt={img}

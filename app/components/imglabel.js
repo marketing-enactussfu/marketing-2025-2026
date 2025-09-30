@@ -13,10 +13,10 @@ function imglabel({
   cta2link,
   instagram,
   linkedin,
-  img,
+img,
 }) {
   return (
-    <div className="bg-primary-gray flex flex-col gap-[32px] p-[48px] w-[100%] h-auto rounded-[16px]">
+    <div className="bg-primary-gray flex flex-col gap-[32px] p-[24px] lg:p-[48px] w-[100%] h-auto rounded-[16px]">
       <Image
         src={img}
         alt="Hero Image"
@@ -38,7 +38,7 @@ function imglabel({
             </Button>
           </div>
         ) : (
-          <div className="flex flex-col md:flex-row gap-[16px] md:gap-[24px]">
+          <div className="flex flex-row  gap-[16px] md:gap-[24px]">
             <Button size="large" style="primary" cta={cta1link}>
               {cta1}
             </Button>
@@ -56,12 +56,12 @@ function imglabel({
             <div className="flex flex-row gap-[24px]">
               {/* Instagram CTA */}
               <a href={instagram} target="_blank" rel="noopener noreferrer">
-                <InstagramIcon fontSize="large" className="white" />
+                <InstagramIcon fontSize="large" className="text-white" />
               </a>
 
               {/* LinkedIn CTA */}
               <a href={linkedin} target="_blank" rel="noopener noreferrer">
-                <LinkedInIcon fontSize="large" className="white" />
+                <LinkedInIcon fontSize="large" className="text-white" />
               </a>
             </div>
           )
