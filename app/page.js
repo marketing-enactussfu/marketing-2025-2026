@@ -152,8 +152,8 @@ function page() {
         </div>
       </section>
 
-      <section className="section-standard">
-        <div className="flex flex-row flex-wrap grow min-[83rem]:flex-nowrap mb-[48px] gap-[20px]">
+      <section className="padding">
+        <div className="flex flex-row md:flex-row flex-wrap grow min-[83rem]:flex-nowrap mb-[48px] gap-[20px]">
           {stats.map((stat) => (
             <CheckLabel
               header={stat.header}
@@ -199,14 +199,12 @@ function page() {
 
       <section>
         <ImgCarousel
-          Carousel=
-          {
-            [{ name: "2024", img: "/images/hero-2024.png" },
+          Carousel={[
+            { name: "2024", img: "/images/hero-2024.png" },
             { name: "2023", img: "/images/hero-2023.png" },
-            { name: "2022", img: "/images/hero-2022.png" }]
-          }
+            { name: "2022", img: "/images/hero-2022.png" },
+          ]}
         />
-
       </section>
     </div>
   );

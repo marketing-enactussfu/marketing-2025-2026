@@ -68,7 +68,7 @@ function page() {
           <h2 className="text-primary-yellow">About Enactus SFU</h2>
         </div>
 
-        <div className="pl-[100px] pr-[100px] md:p-0">
+        <div className="padding md:p-0">
           <Image
             src="/images/AboutCrowd.png"
             alt="A crowd cheering"
