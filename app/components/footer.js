@@ -22,12 +22,12 @@ function Footer() {
     }
 
     return (
-        <footer className={`${dmSans.variable} bg-[#121212]`}>
-            <div className="mx-[100px] pt-16 pb-10">
+        <footer className={`bg-[#121212] h-fit lg:mt-0 mt-[24px]`}>
+            <div className="gutter pt-16 pb-10  h-fit">
                 {/* Top row: Brand + Subscribe */}
-                <div className="flex flex-col lg:flex-row gap-8 md:items-start md:justify-between h-[40vh] w-full">
+                <div className="flex flex-col lg:flex-row gap-8 md:items-start md:justify-between lg:h-[40vh] w-full">
 
-                    <div className="flex flex-col  min-h-full h-full justify-between max-w-full lg:max-w-[30%]">
+                    <div className="flex flex-col  min-h-full h-full justify-between max-w-full lg:max-w-[30%] lg:mt-0 md:mt-0 mt-[24px]">
                         <div className="flex items-end gap-[18px] w-fit h-auto">
 
                             <Image
@@ -47,7 +47,7 @@ function Footer() {
                             focus of sustainability, economic empowerment, and growth.
                         </p>
 
-                        <div className=' flex-1 flex flex-col w-full h-full justify-end '>
+                        <div className=' flex-1 flex flex-col w-full h-full justify-end lg:mt-[0] md:mt-[0] mt-[64px] '>
                             <div className="flex items-center gap-6  py-[16px] ">
                                 {/* Instagram */}
                                 <a href="https://www.instagram.com/enactussfu/" aria-label="Instagram" className="group">
@@ -83,14 +83,14 @@ function Footer() {
                     </div>
 
                     <div className=' flex flex-col gap-[12px] justify-right'>
-                        <h5 className='text-[#FFC220] font-bold'> Sign up for our Newsletter!</h5>
+                        <h5 className='text-[#FFC220] font-bold lg:mt-0 md:mt-0 mt-[24px]'> Sign up for our Newsletter!</h5>
                         < Button size='large' style='primary' target="_blank" cta="https://mailchi.mp/962e35d5baa4/enactus-sfu-mailchimp-sign-up">
                             Sign Up
                         </Button>
                     </div>
 
                     {/* Link columns */}
-                    <div className="grid grid-cols-1 gap-[12px] md:grid-cols-4 max-w-[100%] lg:max-w-[40%] w-full  h-fit">
+                    <div className="grid grid-cols-2 gap-[12px] md:grid-cols-4 max-w-[100%] lg:max-w-[40%] w-full  h-fit">
                         {/* Organization */}
                         <div className="space-y-4">
                             <div className="text-[14px] font-semibold tracking-[-0.025em] text-[#FFC220]">Organization</div>

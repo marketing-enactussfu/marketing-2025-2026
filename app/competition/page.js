@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import Header from "../components/header"
-import ImgLabel from "../components/imglabel"
 import ImgHero from "../components/imgHero"
 import Image from 'next/image'
 import YearLabel from '../components/yearLabel'

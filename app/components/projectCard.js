@@ -12,7 +12,7 @@ function projectCard({ img, header, body }) {
         className="w-100% h-auto"
       />
 
-      <div className="absolute inset-0 bg-no-repeat bg-black/60 hover:bg-black/30 p-[96px] flex flex-col align-center justify-center">
+      <div className="absolute inset-0 bg-no-repeat bg-black/60 hover:bg-black/30 p-[96px] flex flex-col align-center justify-center transition-all duration-[300ms] ease-in-out hover:cursor-pointer">
         <h2 className="text-primary-yellow mb-3">
           {header ?? "Project Title"}
         </h2>

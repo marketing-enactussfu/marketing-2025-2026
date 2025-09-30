@@ -1,14 +1,6 @@
 'use client'
 
 import React, { useState } from 'react'
-import Modal from "../components/modal.js"
-import Header from "../components/header.js"
-import Label from "../components/label.js"
-import IconLabel from "../components/iconLabel.js"
-import BoltIcon from '@mui/icons-material/Bolt';
-import Imglabel from "../components/imglabel.js"
-import Leadership from "../components/leadership.js"
-import ImgBanner from "../components/imgbanner.js"
 
 function Page() {
 

@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import Leadership from "../components/leadership"
 import Header from "../components/header"
 
@@ -37,7 +36,7 @@ function page() {
     return (
         <div className='flex flex-col gap-[48px] gutter'>
             <Header header="Our Leadership Team" body="Core Operations" />
-            <div className=' flex flex-col md:flex-col lg:flex-row flex-wrap gap-[24px]  justify-start'>
+            <div className='flex flex-wrap gap-[24px] justify-center'>
                 {leadershipList.map((person) => (
                     <Leadership
                         name={person.name}
@@ -49,7 +48,7 @@ function page() {
                 ))}
             </div>
             <h3 className='text-primary-yellow mt-[2rem]'> Project Operations </h3>
-            <div className=' flex flex-col md:flex-col lg:flex-row flex-wrap gap-[24px] justify-start '>
+            <div className='flex flex-wrap gap-[24px] justify-center'>
                 {projectList.map((person) => (
                     <Leadership
                         name={person.name}

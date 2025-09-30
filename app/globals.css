@@ -115,6 +115,18 @@ label {
   font-size: 4vw;
 }
 
+/* Viewport/Responsive Styles */
+/* Mobile styles go here */
+@media (max-width: 768px) {
+  .gutter {
+    padding: 0px 24px 32px 24px;
+  }
+
+  .section-standard {
+    padding: 0px 24px 32px 24px;
+  }
+}
+
 .padding {
   padding-inline: 24px;
 }

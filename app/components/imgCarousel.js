@@ -5,21 +5,19 @@ import Image from "next/image"
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 
-function ImgCarousel({ carousel }) {
-
-    const Carousel = [
-        { name: "2024", img: "/images/hero.png" },
-        { name: "", img: "/images/forwardVision.png" }]
+function ImgCarousel({ Carousel = [] }) {
 
     const [currentIndex, setCurrentIndex] = useState(0)
 
     const goToPrevious = () => {
+        if (Carousel.length === 0) return;
         setCurrentIndex((prevIndex) =>
             prevIndex === 0 ? Carousel.length - 1 : prevIndex - 1
         )
     }
 
     const goToNext = () => {
+        if (Carousel.length === 0) return;
         setCurrentIndex((prevIndex) =>
             prevIndex === Carousel.length - 1 ? 0 : prevIndex + 1
         )
@@ -28,7 +26,7 @@ function ImgCarousel({ carousel }) {
     return (
         <div>
             {/* Progress Bar */}
-            <div className='mb-4'>
+            <div className='mb-4 px-[24px]'>
                 <div className='flex flex-row gap-4'>
                     {Carousel.map((item, index) => (
                         <div key={index} className='flex flex-col gap-1 flex-1'>
@@ -47,7 +45,7 @@ function ImgCarousel({ carousel }) {
                 </div>
             </div>
 
-            <div className='relative w-full h-[80vh] overflow-hidden flex flex-col gap-[16px]'>
+            <div className='relative w-full h-[80vh] overflow-hidden flex flex-col gap-[16px] '>
 
                 {Carousel.length === 0 ? <div className='border-1 border-white w-full'></div> : ""}
 

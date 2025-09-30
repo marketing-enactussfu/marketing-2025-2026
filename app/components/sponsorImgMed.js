@@ -9,7 +9,7 @@ function sponsorImgMed({ img, sponsor, width, height }) {
         alt={sponsor}
         width={width}
         height={height}
-        className="h-auto rounded-[6px] md:rounded-[11px] lg:rounded-[16px]"
+        className="w-full h-full object-contain rounded-[6px] md:rounded-[11px] lg:rounded-[16px]"
       />
     </div>
   );

@@ -3,10 +3,9 @@ import Image from "next/image";
 import { MdGroups, MdInterests, MdConstruction } from "react-icons/md";
 
 import Button from "./components/button";
-import Iconlabel from "./components/iconLabel";
 import CheckLabel from "./components/checkLabel";
-import { Check } from "@mui/icons-material";
 import ProjectCard from "./components/projectCard";
+import ImgCarousel from "./components/imgCarousel";
 
 function page() {
   const items = [
@@ -187,7 +186,7 @@ function page() {
           ))}
         </div>
       </section>
-
+      {/* 
       <section>
         <Image
           src="/images/CompetitionCheer.png"
@@ -196,6 +195,18 @@ function page() {
           height={1200}
           className="w-[100%] h-auto"
         />
+      </section> */}
+
+      <section>
+        <ImgCarousel
+          Carousel=
+          {
+            [{ name: "2024", img: "/images/hero-2024.png" },
+            { name: "2023", img: "/images/hero-2023.png" },
+            { name: "2022", img: "/images/hero-2022.png" }]
+          }
+        />
+
       </section>
     </div>
   );

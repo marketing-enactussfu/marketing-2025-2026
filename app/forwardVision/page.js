@@ -1,8 +1,7 @@
-import React from "react";
-import IconLabel from "../components/iconLabel";
-import ImgHero from "../components/imgHero";
-import Image from "next/image";
-import Link from "next/link";
+import React from 'react'
+import IconLabel from '../components/iconLabel'
+import ImgHero from '../components/imgHero'
+import Image from "next/image"
 import { MdBolt, MdInsights, MdViewInAr } from "react-icons/md";
 import Button from "../components/button";
 import ImgCarousel from "../components/imgCarousel";
@@ -82,6 +81,10 @@ function page() {
       </div>
     </div>
   );
+                <ImgCarousel Carousel={[]} />
+            </div>
+        </div>
+    )
 }
 
 export default page;

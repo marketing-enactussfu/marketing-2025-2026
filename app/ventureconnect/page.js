@@ -1,10 +1,10 @@
-import React from "react";
-import IconLabel from "../components/iconLabel";
-import ImgHero from "../components/imgHero";
-import Image from "next/image";
-import Link from "next/link";
-import { MdOutlineSkateboarding, MdPeople, MdHandshake } from "react-icons/md";
-import Button from "../components/button";
+import React from 'react'
+import IconLabel from '../components/iconLabel'
+import ImgHero from '../components/imgHero'
+import Image from "next/image"
+import { MdPeople, MdHandshake } from "react-icons/md";
+import Button from "../components/button"
+
 
 function page() {
   return (
