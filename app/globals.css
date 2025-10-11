@@ -191,33 +191,4 @@ label {
     padding-left: 100px;
     padding-right: 100px;
   }
-
-  /* Typography System */
-  h1 {
-    font-size: 3rem; /* 48px */
-    font-weight: 700;
-    line-height: 1.2;
-    /* margin-bottom: 1rem; */
-  }
-
-  h2 {
-    font-size: 1.85rem; /* 36px */
-    font-weight: 600;
-    line-height: 1.3;
-    /* margin-bottom: 0.875rem; */
-  }
-
-  h3 {
-    font-size: 1.4rem; /* 30px */
-    font-weight: 500;
-    line-height: 1.4;
-    /* margin-bottom: 0.75rem; */
-  }
-
-  h4 {
-    font-size: 1.5rem; /* 24px */
-    font-weight: 500;
-    line-height: 1.5;
-    /* margin-bottom: 0.625rem; */
-  }
 }

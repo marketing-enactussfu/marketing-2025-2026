@@ -10,28 +10,28 @@ import ImgCarousel from "./components/imgCarousel";
 function page() {
   const items = [
     {
-      label: "Development",
-      body: "Allow students to build sustainable projects and further their impact by adapting to changing trends.",
+      label: "Innovation",
+      body: "We bring innovation to all of our initiatives and push our projects past their limits. We strive to be better than we were yesterday.",
       icons: "MdConstruction",
     },
     {
-      label: "Member Engagement",
-      body: "Build a welcoming, engaging, and inclusive community for all members.",
+      label: "Passion",
+      body: "We foster a work hard play hard culture, bringing passion and joy to our work. We bring energy, purpose, and heart to everything we do.",
       icons: "MdGroups",
     },
     {
-      label: "Collective Growth",
-      body: "Foster unity and create opportunities for members to make an impact on the community and the club.",
+      label: "Excellence",
+      body: "We hold ourselves to the highest standards in every project, always striving to exceed expectations. We pursue continuous growth and outstanding results.",
       icons: "MdInterests",
     },
   ];
 
   const stats = [
-    { header: "15+", body: "Projects throughout 2012-2025." },
-    { header: "20+", body: "Projects throughout 2012-2025." },
-    { header: "100+", body: "Projects throughout 2012-2025." },
-    { header: "187,000+", body: "Projects throughout 2012-2025." },
-    { header: "15,000+", body: "Projects throughout 2012-2025." },
+    { header: "15", body: "Community Initiatives" },
+    { header: "1200", body: "Members Involved" },
+    { header: "8,600+", body: "Lives Impacted" },
+    { header: "115,000+", body: "Volunteer Hours" },
+    // { header: "15,000+", body: "Projects throughout 2012-2025." },
   ];
 
   const projectsTop = [
@@ -186,16 +186,6 @@ function page() {
           ))}
         </div>
       </section>
-      {/* 
-      <section>
-        <Image
-          src="/images/CompetitionCheer.png"
-          alt="Enact"
-          width={1200}
-          height={1200}
-          className="w-[100%] h-auto"
-        />
-      </section> */}
 
       <section>
         <ImgCarousel
