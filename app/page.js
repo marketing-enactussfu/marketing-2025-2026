@@ -68,12 +68,12 @@ function page() {
           alt="Hero Image"
           width={1920}
           height={1080}
-          className="w-full h-auto"
+          className="w-full h-auto saturate-85"
           priority
         />
 
         {/* Absolutely positioned centered text with golden glow effect */}
-        <div className="absolute inset-0 flex flex-col gap-[27px] items-center justify-center">
+        <div className="absolute inset-0 flex flex-col gap-[16px] lg:gap-[27px] items-center justify-center">
           <h1 className="hero-text text-white text-center golden-glow">
             FUELED BY <br /> INNOVATION
           </h1>

@@ -109,11 +109,13 @@ label {
 }
 
 .golden-glow {
-  text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 20px #ffd700;
+  text-shadow: 0 0 5px #ffd700;
 }
 
 .hero-text {
-  font-size: 4vw;
+  font-size: 5vw;
+  font-family: "Impact";
+  line-height: 95%;
 }
 
 /* Viewport/Responsive Styles */
