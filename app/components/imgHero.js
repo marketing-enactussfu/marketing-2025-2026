@@ -21,7 +21,7 @@ function imgHero({ img, header, subheader, cta1, cta2 }) {
           <h2 className="text-primary-yellow text-left w-full">{subheader}</h2>
           {cta2 == null ? (
             <div className="flex flex-row gap-[24px] justify-center">
-              <Button size="large" style="primary">
+              <Button size="large" style="primary" onClick={() => alert("This event is currently not available yet!")}>
                 {cta1}
               </Button>
             </div>

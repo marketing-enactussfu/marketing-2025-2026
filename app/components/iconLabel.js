@@ -7,7 +7,7 @@ function iconLabel({ icon, header, body, subheader }) {
             {icon}
             {subheader == null ? <h4>{header}</h4> :
                 <div className='flex flex-col gap-[8px]'>
-                    <h5 className='text-primary-yellow'>{subheader}</h5>
+                    <h3 className='text-primary-yellow'>{subheader}</h3>
                     <h4>{header}</h4>
                 </div>
             }

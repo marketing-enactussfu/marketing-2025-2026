@@ -147,13 +147,13 @@ function page() {
   ];
 
   return (
-    <div className="section-standard">
-      <div className="flex flex-col mt-12 mb-12 gap-y-4">
+    <div className="section-standard gap-[128px]">
+      <div className="flex flex-col mt-12 mb-12">
         <h3 className="text-primary-yellow">Sponsorships</h3>
 
-        <h1>Thank you to all our partners!</h1>
+        <h1>Thank you to all our partners and sponsors!</h1>
 
-        <div className="flex gap-[24px]">
+        <div className="flex gap-[24px] mt-[24px]">
           <Button size="large" variant="primary">
             Become a Sponsor
           </Button>
@@ -211,14 +211,17 @@ function page() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-4 mt-[64px] mb-[64px]">
+      <div className="flex flex-col gap-4 mt-[64px] mb-[32px] lg:max-w-[60vw]">
         <h1>Interested in becoming a partner?</h1>
-        <h3 className="text-primary-yellow">
-          If you would like to partner with us, fill out the form below and one
+        <h3 className="text-white">
+          If you would like to partner with us, you can contact us here at the button below and one
           of our staff members will get back to you.
         </h3>
+        <Button size="large" variant="primary" className="my-[32px]" cta="mailto:info@enactus.com">
+          Get In Contact With Us
+        </Button>
       </div>
-
+      {/* 
       <div className="flex flex-col gap-4 mb-4">
         <div className="flex gap-4 sm:flex-col md:flex-col lg:grow lg:flex-row">
           <FormField field="First Name"></FormField>
@@ -227,10 +230,7 @@ function page() {
         <FormField field="Phone"></FormField>
         <FormField field="Email"></FormField>
         <FormField field="Message"></FormField>
-      </div>
-      <Button size="large" variant="primary" className="mb-12">
-        Submit
-      </Button>
+      </div> */}
     </div>
   );
 }

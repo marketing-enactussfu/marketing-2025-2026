@@ -144,7 +144,7 @@ function page() {
 
                 <div className="flex flex-col gap-2 text-white">
                   <h2>{item.label} </h2>
-                  <p> {item.body}</p>
+                  <h3> {item.body}</h3>
                 </div>
               </div>
             );
@@ -201,9 +201,9 @@ function page() {
         <ImgCarousel
           Carousel=
           {
-            [{ name: "2024", img: "/images/hero-2024.png" },
-            { name: "2023", img: "/images/hero-2023.png" },
-            { name: "2022", img: "/images/hero-2022.png" }]
+            [{ name: "2024", img: "/images/Hero-2024.png" },
+            { name: "2023", img: "/images/Hero-2023.png" },
+            { name: "2022", img: "/images/Hero-2022.png" }]
           }
         />
 

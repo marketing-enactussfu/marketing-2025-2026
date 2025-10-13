@@ -31,7 +31,7 @@ function Footer() {
                         <div className="flex items-end gap-[18px] w-fit h-auto">
 
                             <Image
-                                src="/images/logo.svg"
+                                src="/images/Logo.svg"
                                 alt="Enactus SFU Logo"
                                 width={200}
                                 height={64}
@@ -74,18 +74,17 @@ function Footer() {
                                     Copyright © Enactus {currentYear}. All rights reserved.
                                 </div>
                                 <div className="flex items-center gap-4 text-[16px] font-medium tracking-[-0.015em] text-[#F5F5F5]">
-                                    <a href="#" className="transition ease-in-out duration-100 hover:underline hover:cursor-pointer">Privacy Policy</a>
+                                    <a className="transition ease-in-out duration-100 hover:cursor-mouse">Privacy Policy</a>
                                     <span>|</span>
-                                    <a href="#" className="transition ease-in-out duration-100 hover:underline hover:cursor-pointer">Land Acknowledgment</a>
+                                    <a href="https://www.sfu.ca/communicators-toolkit/brand/guidelines/writing/editorial-style-guide/language-grammar/territorial-acknowledgements.html" className="transition ease-in-out duration-100 hover:underline hover:cursor-pointer">Land Acknowledgment</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div className=' flex flex-col gap-[12px] justify-right'>
-                        <h5 className='text-[#FFC220] font-bold lg:mt-0 md:mt-0 mt-[24px]'> Sign up for our Newsletter!</h5>
                         < Button size='large' style='primary' target="_blank" cta="https://mailchi.mp/962e35d5baa4/enactus-sfu-mailchimp-sign-up">
-                            Sign Up
+                            Sign up for our Newsletter!
                         </Button>
                     </div>
 
@@ -95,9 +94,14 @@ function Footer() {
                         <div className="space-y-4">
                             <div className="text-[14px] font-semibold tracking-[-0.025em] text-[#FFC220]">Organization</div>
                             <div className="space-y-4 text-[14px] text-[#D4D4D4] flex flex-col">
-                                {['The Team', 'About Us', 'History', 'Awards'].map((label) => (
-                                    <a key={label} href="#" className="transition ease-in-out duration-100 hover:underline hover:cursor-pointer">
-                                        {label}
+                                {[
+                                    { name: "The Team", link: "/team" },
+                                    { name: "About Us", link: "/about" },
+                                    { name: "History", link: "/about#history" },
+                                    { name: "Awards", link: "/about#awards" }
+                                ].map((item) => (
+                                    <a key={item.name} href={item.link} className="transition ease-in-out duration-100 hover:underline hover:cursor-pointer">
+                                        {item.name}
                                     </a>
                                 ))}
                             </div>
@@ -107,9 +111,15 @@ function Footer() {
                         <div className="space-y-4">
                             <div className="text-[14px] font-semibold tracking-[-0.025em] text-[#FFC220]">Projects</div>
                             <div className="space-y-4 text-[14px] text-[#D4D4D4] flex flex-col">
-                                {['Unify', 'SKYES', 'Alara', 'Nourish', 'NextSpark'].map((label) => (
-                                    <a key={label} href="#" className="transition ease-in-out duration-100 hover:underline hover:cursor-pointer">
-                                        {label}
+                                {[
+                                    { name: "Unify", link: "/projects#unify" },
+                                    { name: "SKYES", link: "/projects#skyes" },
+                                    { name: "Alara", link: "/projects#alara" },
+                                    { name: "Nourish", link: "/projects#nourish" },
+                                    { name: "NextSpark", link: "/projects#nextspark" }
+                                ].map((project) => (
+                                    <a key={project.name} href={project.link} className="transition ease-in-out duration-100 hover:underline hover:cursor-pointer">
+                                        {project.name}
                                     </a>
                                 ))}
                             </div>
@@ -117,20 +127,14 @@ function Footer() {
 
 
                         <div className="space-y-4">
-                            <div className="text-[14px] font-semibold tracking-[-0.025em] text-[#FFC220]">Past Projects</div>
+                            <div className="text-[14px] font-semibold tracking-[-0.025em] text-[#FFC220]">Current Events</div>
                             <div className="space-y-4 text-[14px] text-[#D4D4D4] flex flex-col">
                                 {[
-                                    'Kindred Knots',
-                                    'Bright Ideas',
-                                    'Banner Bags',
-                                    'Coast Cards',
-                                    'Count on Me',
-                                    'Changemaker Challenge',
-                                    'Media Minds',
-                                    'Refresh',
-                                ].map((label) => (
-                                    <a key={label} href="#" className="block transition ease-in-out duration-100 hover:underline hover:cursor-pointer">
-                                        {label}
+                                    { name: "Venture Connect", link: "/ventureconnect" },
+                                    { name: "Forward Vision", link: "/forwardVision" },
+                                ].map((project) => (
+                                    <a key={project.name} href={project.link} className="block transition ease-in-out duration-100 hover:underline hover:cursor-pointer">
+                                        {project.name}
                                     </a>
                                 ))}
                             </div>
@@ -140,9 +144,13 @@ function Footer() {
                         <div className="space-y-4">
                             <div className="text-[14px] font-semibold tracking-[-0.025em] text-[#FFC220]">Get Involved</div>
                             <div className="space-y-4 text-[14px] text-[#D4D4D4] flex flex-col">
-                                {['Careers', 'Sponsor Us', 'Contact Us'].map((label) => (
-                                    <a key={label} href="#" className="transition ease-in-out duration-100 hover:underline hover:cursor-pointer">
-                                        {label}
+                                {[
+                                    { name: "Join Our Team", link: "https://www.instagram.com/enactussfu/" },
+                                    { name: "Sponsor Us", link: "/sponsor" },
+                                    { name: "Contact Us", link: "https://www.instagram.com/enactussfu/" }
+                                ].map((item) => (
+                                    <a key={item.name} href={item.link} target="_blank" className="transition ease-in-out duration-100 hover:underline hover:cursor-pointer">
+                                        {item.name}
                                     </a>
                                 ))}
                             </div>

@@ -43,7 +43,7 @@ function page() {
           header={"Event Information"}
           subheader={"What you can expect"}
           body={
-            "PSuccessful entrepreneurs will share about their entrepreneurial journey and challenges, failures and lessons. Speakers offer practical advice such as realities of scaling a business."
+            "The event will be an interactive workshop and fireside chat with experienced founders and industry leaders, providing opportunities to learn practical skills, gain personal insights, and build meaningful connections that inspire their entrepreneurial growth."
           }
           icon={<MdPeople className="text-primary-red text-4xl" />}
         />

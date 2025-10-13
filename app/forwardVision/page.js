@@ -16,7 +16,7 @@ function page() {
         }
         cta1={"Participant Package"}
         cta2={"Register"}
-        img={"/images/forwardVision.png"}
+        img={"/images/ForwardVision.png"}
       />
 
       <div className="section-standard gap-[16px] md:gap-[24px]">
@@ -30,25 +30,25 @@ function page() {
 
       <section className="section-standard flex flex-col lg:flex-row gap-[16px] md:gap-[24px]">
         <IconLabel
-          header={"Pitching Streams"}
+          header={"Entrepreneurship for Impact"}
           body={
-            "Teams will develop a small enterprise focused on the theme of 'Climate Action'. On the event day, teams will pitch their ideas to a panel of investors to receive fictitious funding for the 'Scale-Up Session'."
+            "Teams will develop small enterprises that address one or more UN Sustainable Development Goals (SDGs)."
           }
           icon={<MdInsights className="text-primary-red text-4xl" />}
         />
 
         <IconLabel
-          header={"Scale Up"}
+          header={"Mentorship & Collaboration"}
           body={
-            "Each team will be paired with a professional project mentor to guide them in utilizing the funding earned from their pitch to enhance their project."
+            "Over a two-week mentorship phase, teams will participate in the Forward Vision Workshop to connect with mentors, refine their ideas, and prepare for the competition."
           }
           icon={<MdBolt className="text-primary-red text-4xl" />}
         />
 
         <IconLabel
-          header={"Finals"}
+          header={"Investor-Style Pitching"}
           body={
-            "In the final presentations, all teams will present their refined pitches to a panel of judges."
+            "During the final competition, judges will act as investors, and teams will negotiate for funding during an interactive Q&A session."
           }
           icon={<MdViewInAr className="text-primary-red text-4xl" />}
         />
@@ -56,7 +56,7 @@ function page() {
 
       <div className="flex flex-col gap-[24px] md:gap-[48px] padding">
         <Image
-          src={"/images/ForwardVision.png"}
+          src={"/images/FV.png"}
           alt={"Venture Connect Banner"}
           width={1920}
           height={1080}

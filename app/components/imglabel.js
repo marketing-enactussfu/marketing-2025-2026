@@ -13,7 +13,7 @@ function imglabel({
   cta2link,
   instagram,
   linkedin,
-img,
+  img,
 }) {
   return (
     <div className="bg-primary-gray flex flex-col gap-[32px] p-[24px] lg:p-[48px] w-[100%] h-auto rounded-[16px]">
@@ -42,15 +42,20 @@ img,
             <Button size="large" style="primary" cta={cta1link}>
               {cta1}
             </Button>
-            <Button size="large" style="primary" cta={cta2link}>
-              {cta2}
-            </Button>
+
+            {cta2link == null ?
+              <Button size="large" style="primary" cta={cta2link}>
+                {cta2}
+              </Button>
+              :
+              ""
+            }
           </div>
         )}
 
         {
           //checks if instagram and linkedin links are available, otherwise removes them.
-          instagram || linkedin === "" ? (
+          instagram || linkedin == null ? (
             ""
           ) : (
             <div className="flex flex-row gap-[24px]">

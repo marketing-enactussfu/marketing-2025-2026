@@ -86,21 +86,21 @@ function page() {
           <div className="flex flex-col gap-[16px] text-white">
             <h2>Enactus SFU&apos;s Impact</h2>
             <div className="flex flex-col gap-[16px]">
-              <p>
+              <h3>
                 At Enactus SFU, we tackle community issues by turning challenges
                 into opportunities to innovate. We empower students to develop
                 skills, take initiative, and become the future leaders our
                 communities need. Over the past 8 years, our team has dedicated
                 over 115,000 volunteer hours, impacting the lives of 8,600+
                 individuals.
-              </p>
-              <p>
+              </h3>
+              <h3>
                 As one of the largest organizations at the Beedie School of
                 Business, Enactus SFU also has a strong legacy of competitive
                 excellence - consistently placing at Enactus Canada’s Regional
                 and National Expositions, including multiple podium finishes in
                 recent years.
-              </p>
+              </h3>
             </div>
           </div>
         </div>
@@ -167,7 +167,7 @@ function page() {
 
                 <div className="flex flex-col gap-2 text-white">
                   <h2>{item.label} </h2>
-                  <p> {item.body}</p>
+                  <h3> {item.body}</h3>
                 </div>
               </div>
             );

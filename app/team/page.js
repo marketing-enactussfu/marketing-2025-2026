@@ -4,8 +4,8 @@ import Header from "../components/header"
 
 function page() {
     const leadershipList = [
-        { name: "Cameron Miranda", position: "Co - President", img: "/images/cameron.png", linkedin: "https://www.linkedin.com/in/cameronkmiranda/" },
-        { name: "Lauren Riestra", position: "Co - President", img: "/images/lauren.png", linkedin: "https://www.linkedin.com/in/lauren-riestra-6643b6266/" },
+        { name: "Cameron Miranda", position: "President", img: "/images/cameron.png", linkedin: "https://www.linkedin.com/in/cameronkmiranda/" },
+        { name: "Lauren Riestra", position: "President", img: "/images/lauren.png", linkedin: "https://www.linkedin.com/in/lauren-riestra-6643b6266/" },
         { name: "Amber Holliday", position: "VP of Internal", img: "/images/amber.png", linkedin: "https://www.linkedin.com/in/amber-holliday/" },
         { name: "Naia Wong", position: "VP of Strategy", img: "/images/naia.png", linkedin: 'https://www.linkedin.com/in/naia-wong/' },
         { name: "Vinay Aery", position: "VP of Strategy", img: "/images/vinay.png", linkedin: "https://www.linkedin.com/in/vinayaery/" },
@@ -47,7 +47,7 @@ function page() {
                     ></Leadership>
                 ))}
             </div>
-            <h3 className='text-primary-yellow mt-[2rem]'> Project Operations </h3>
+            <h2 className='text-primary-yellow mt-[2rem]'> Project Operations </h2>
             <div className='flex flex-wrap gap-[24px] justify-center'>
                 {projectList.map((person) => (
                     <Leadership
