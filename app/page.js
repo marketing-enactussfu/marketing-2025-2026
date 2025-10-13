@@ -10,28 +10,28 @@ import ImgCarousel from "./components/imgCarousel";
 function page() {
   const items = [
     {
-      label: "Development",
-      body: "Allow students to build sustainable projects and further their impact by adapting to changing trends.",
+      label: "Innovation",
+      body: "We bring innovation to all of our initiatives and push our projects past their limits. We strive to be better than we were yesterday.",
       icons: "MdConstruction",
     },
     {
-      label: "Member Engagement",
-      body: "Build a welcoming, engaging, and inclusive community for all members.",
+      label: "Passion",
+      body: "We foster a work hard play hard culture, bringing passion and joy to our work. We bring energy, purpose, and heart to everything we do.",
       icons: "MdGroups",
     },
     {
-      label: "Collective Growth",
-      body: "Foster unity and create opportunities for members to make an impact on the community and the club.",
+      label: "Excellence",
+      body: "We hold ourselves to the highest standards in every project, always striving to exceed expectations. We pursue continuous growth and outstanding results.",
       icons: "MdInterests",
     },
   ];
 
   const stats = [
-    { header: "15+", body: "Projects throughout 2012-2025." },
-    { header: "20+", body: "Projects throughout 2012-2025." },
-    { header: "100+", body: "Projects throughout 2012-2025." },
-    { header: "187,000+", body: "Projects throughout 2012-2025." },
-    { header: "15,000+", body: "Projects throughout 2012-2025." },
+    { header: "15", body: "Community Initiatives" },
+    { header: "1200", body: "Members Involved" },
+    { header: "8,600+", body: "Lives Impacted" },
+    { header: "115,000+", body: "Volunteer Hours" },
+    // { header: "15,000+", body: "Projects throughout 2012-2025." },
   ];
 
   const projectsTop = [
@@ -68,12 +68,12 @@ function page() {
           alt="Hero Image"
           width={1920}
           height={1080}
-          className="w-full h-auto"
+          className="w-full h-auto saturate-85"
           priority
         />
 
         {/* Absolutely positioned centered text with golden glow effect */}
-        <div className="absolute inset-0 flex flex-col gap-[27px] items-center justify-center">
+        <div className="absolute inset-0 flex flex-col gap-[16px] lg:gap-[27px] items-center justify-center">
           <h1 className="hero-text text-white text-center golden-glow">
             FUELED BY <br /> INNOVATION
           </h1>
@@ -152,8 +152,8 @@ function page() {
         </div>
       </section>
 
-      <section className="section-standard">
-        <div className="flex flex-row flex-wrap grow min-[83rem]:flex-nowrap mb-[48px] gap-[20px]">
+      <section className="padding">
+        <div className="flex flex-row md:flex-row flex-wrap grow min-[83rem]:flex-nowrap mb-[48px] gap-[20px]">
           {stats.map((stat) => (
             <CheckLabel
               header={stat.header}
@@ -186,16 +186,6 @@ function page() {
           ))}
         </div>
       </section>
-      {/* 
-      <section>
-        <Image
-          src="/images/CompetitionCheer.png"
-          alt="Enact"
-          width={1200}
-          height={1200}
-          className="w-[100%] h-auto"
-        />
-      </section> */}
 
       <section>
         <ImgCarousel
@@ -206,7 +196,6 @@ function page() {
             { name: "2022", img: "/images/Hero-2022.png" }]
           }
         />
-
       </section>
     </div>
   );

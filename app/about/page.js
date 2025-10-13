@@ -30,6 +30,8 @@ function page() {
     },
     { goal: "Climate action", img: "/images/goal13.png" },
     { goal: "Life below water", img: "/images/goal14.png" },
+    { goal: "Life on land", img: "/images/goal15.png" },
+    { goal: "Partnerships for the goals", img: "/images/goal17.png" },
   ];
 
   const images = [
@@ -55,8 +57,8 @@ function page() {
 
   return (
     <div className="flex flex-col gap-[16px]">
-      <section className="flex flex-col gap-[16px] md:gap-[48px] mb-[16px] md:mb-[48px]">
-        <div className="section-standard flex flex-col gap-[16px]">
+      <section className="flex flex-col mb-[16px] md:mb-[48px]">
+        <div className="gutter flex flex-col gap-[16px]">
           <h1>
             Welcome to the journey of Enactus SFU, where innovation, passion,
             and excellence have been our guiding principles for 32 years.
@@ -68,7 +70,7 @@ function page() {
           <h2 className="text-primary-yellow">About Enactus SFU</h2>
         </div>
 
-        <div className="pl-[100px] pr-[100px] md:p-0">
+        <div className="padding md:p-0">
           <Image
             src="/images/AboutCrowd.png"
             alt="A crowd cheering"
@@ -138,7 +140,7 @@ function page() {
               alt={goal.goal}
               width={600}
               height={600}
-              className="h-auto w-[calc(50%-6px)] md:w-[calc(20%-20px)]"
+              className="h-auto w-[calc(50%-6px)] md:w-[calc(15%-3px)] lg:w-[calc(16.6%-20px)]"
             ></Image>
           ))}
         </div>
