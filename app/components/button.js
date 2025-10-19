@@ -28,16 +28,16 @@ function Button({
   const buttonClasses = `${baseClasses} ${variants[variant]} ${sizes[size]} ${className}`;
 
   return (
-    <button
-      type={type}
-      onClick={onClick}
-      disabled={disabled}
-      className={buttonClasses}
-    >
-      <a href={cta} target={target}>
+    <a href={cta} target={target}>
+      <button
+        type={type}
+        onClick={onClick}
+        disabled={disabled}
+        className={buttonClasses}
+      >
         {children}
-      </a>
-    </button>
+      </button>
+    </a>
   );
 }
 
