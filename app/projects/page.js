@@ -8,38 +8,58 @@ function page() {
     {
       name: "SKYES",
       description:
-        "SKYES is an entrepreneurial education initiative that aims to educate underprivileged youth in South and South-East Asia with entrepreneurial education to drive local economic development and to alleviate the stresses of mass migration on international economies.",
-      cta: "google.ca",
-      linkedin: "google.ca",
-      instagram: "google.ca",
-      image: "/images/SKYES.png",
+        "SKYES is an entrepreneurial education initiative that empowers underprivileged youth across South and Southeast Asia to become changemakers in their communities. Through experiential learning and mentorship, students gain the skills and confidence to transform their ideas into impact.",
+      // cta: "google.ca",
+      // linkedin: "google.ca",
+      // instagram: "google.ca",
+      image: "/images/SKYES-Banner.png",
     },
     {
       name: "Unify",
       description:
-        "Unify is a digital platform designed to support immigrants, refugees, and international students as they build a new life in Canada. Through access to essential resources, educational tools, and a supportive community, Unify aims to make the transition smoother, more informed, and empowering.",
-      cta: "google.ca",
-      linkedin: "google.ca",
-      instagram: "google.ca",
-      image: "/images/Unify.png",
+        "Unify is a digital platform that helps newcomers to Canada feel at home faster by combining trusted information, community connection, and personalized guidance in one place. Through practical lessons, an AI companion, and local events, Unify turns the challenges of settling in Canada into a clear, confident, and connected journey.",
+      // cta: "google.ca",
+      linkedin: "https://www.linkedin.com/company/unify-social/posts/?feedView=all",
+      instagram: "https://www.instagram.com/unifysocial.ca/",
+      image: "/images/Unify-Banner.png",
     },
     {
       name: "Alara",
       description:
-        "Alara provides plastic alternatives that promote sustainability and a circular economy by leveraging earth’s natural resources, to create a 100% compostable bioplastic. Designed by eco-conscious individuals for eco-conscious individuals, this solution challenges the conventional plastic industry and drives a shift towards a greener future.",
-      cta: "google.ca",
-      linkedin: "google.ca",
-      instagram: "google.ca",
-      image: "/images/Alara.png",
+        "Meet Alara, an eco-friendly bioplastic born from Earth’s waters, designed for Earth’s future. Alara is leveraging Earth’s natural resources to create a 100% biodegradable bioplastic to tackle the plastic pollution crisis, pushing the economy towards a more sustainable future.",
+      // cta: "google.ca",
+      // linkedin: "google.ca",
+      // instagram: "google.ca",
+      image: "/images/Alara-Banner.png",
     },
     {
       name: "Nourish",
       description:
-        "Nourish makes plant-based protein gummies from up-cycled fruit. Packed with protein and fiber, low in sugar, they’re a convenient, feel-good snack that fuels active lifestyles and fights food waste.",
-      cta: "google.ca",
-      linkedin: "google.ca",
-      instagram: "google.ca",
-      image: "/images/Nourish.png",
+        "Nourish is a student-led social enterprise that transforms cosmetically imperfect fruit from local grocery stores and distributors into high-protein, high-fiber, low-sugar gummies to promote functional and sustainable snacking.",
+      // cta: "google.ca",
+      // linkedin: "google.ca",
+      instagram: "https://www.instagram.com/nourishcandy/",
+      image: "/images/Nourish-Banner.png",
+    },
+
+    {
+      name: "NextSpark",
+      description:
+        "NextSpark is a hands-on STEM education program that provides interactive kits and engaging workshops to help students learn science, technology and engineering through real-world applications. By combining fun, discovery-based learning with structured support, NextSpark empowers students to build STEM skills and confidence in an accessible and exciting way",
+      // cta: "google.ca",
+      // linkedin: "google.ca",
+      // instagram: "google.ca",
+      image: "/images/NextSpark-Banner.png",
+    },
+
+    {
+      name: "Renovo",
+      description:
+        "Renovo is a not-for-profit that empowers Canadian veterans and Indigenous communities through multi-week business programs. Offering mentorship, hands-on start-up development, and seed funding opportunities, we renew purpose today, to reimagine tomorrow together",
+      // cta: "google.ca",
+      // linkedin: "google.ca",
+      // instagram: "google.ca",
+      image: "/images/Renovo-Banner.png",
     },
   ];
 

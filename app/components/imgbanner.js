@@ -23,39 +23,48 @@ function imgbanner({ header, body, cta1, cta2, instagram, linkedin, img }) {
           <h3>{body}</h3>
         </div>
 
-        {cta2 == null ? (
-          <div className="flex flex-row gap-[24px]">
-            <Button size="large" style="primary">
-              {cta1}
-            </Button>
-          </div>
-        ) : (
-          <div className="flex flex-row gap-[24px]">
-            <Button size="large" style="primary">
-              {cta1}
-            </Button>
-            <Button size="large" style="primary">
-              {cta2}
-            </Button>
-          </div>
-        )}
+        {cta1 ?
+
+          cta2 == null ? (
+            <div className="flex flex-row gap-[24px]">
+              <Button size="large" style="primary">
+                {cta1}
+              </Button>
+            </div>
+          ) : (
+            <div className="flex flex-row gap-[24px]">
+              <Button size="large" style="primary">
+                {cta1}
+              </Button>
+              <Button size="large" style="primary">
+                {cta2}
+              </Button>
+            </div>
+          )
+          :
+          ""
+        }
 
         {
           //checks if instagram and linkedin links are available, otherwise removes them.
-          instagram || linkedin === "" ? (
-            ""
-          ) : (
+          instagram || linkedin ? (
             <div className="flex flex-row gap-[24px]">
               {/* Instagram CTA */}
-              <a href={instagram} target="_blank" rel="noopener noreferrer">
-                <InstagramIcon fontSize="large" className="white" />
-              </a>
+              {instagram && (
+                <a href={instagram} target="_blank" rel="noopener noreferrer">
+                  <InstagramIcon fontSize="large" className="white" />
+                </a>
+              )}
 
               {/* LinkedIn CTA */}
-              <a href={linkedin} target="_blank" rel="noopener noreferrer">
-                <LinkedInIcon fontSize="large" className="white" />
-              </a>
+              {linkedin && (
+                <a href={linkedin} target="_blank" rel="noopener noreferrer">
+                  <LinkedInIcon fontSize="large" className="white" />
+                </a>
+              )}
             </div>
+          ) : (
+            ""
           )
         }
       </div>
