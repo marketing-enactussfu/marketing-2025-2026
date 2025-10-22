@@ -31,7 +31,7 @@ function ImgCarousel({ Carousel = [] }) {
                     {Carousel.map((item, index) => (
                         <div key={index} className='flex flex-col gap-1 flex-1'>
                             <div className='text-white text-sm font-medium text-center'>
-                                <h3>{item.name || `Item ${index + 1}`}</h3>
+                                <h3>{item.name || ``}</h3>
                             </div>
 
                             <div

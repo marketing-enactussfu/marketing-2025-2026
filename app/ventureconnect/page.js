@@ -53,9 +53,9 @@ function page() {
         <ImgCarousel
           Carousel=
           {
-            [{ name: "NEED A NEW PHOTO", img: "/images/VentureConnect.png" },
-            { name: "NEED A NEW PHOTO", img: "/images/VentureConnect 2.png" },
-            { name: "Good Photo", img: "/images/VentureConnect3a.png" }]
+            [{ name: "", img: "/images/VentureConnect1.jpg" },
+            { name: "", img: "/images/VentureConnect2.jpg" },
+            { name: "", img: "/images/VentureConnect3.jpg" }]
           }
         />
 
