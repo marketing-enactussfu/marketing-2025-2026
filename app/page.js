@@ -79,7 +79,7 @@ function page() {
       // cta: "google.ca",
       // linkedin: "google.ca",
       // instagram: "google.ca",
-      image: "/images/NextSpark-Banner.png",
+      image: "/images/NextSpark-Banner.jpg",
     },
 
     {
@@ -90,6 +90,17 @@ function page() {
       // linkedin: "google.ca",
       // instagram: "google.ca",
       image: "/images/Renovo-Banner.png",
+    },
+
+
+    {
+      name: "SensMS",
+      description:
+        "SensMS empowers women with Multiple Sclerosis to better understand and manage the connection between their hormonal cycles and disease symptoms. Through a home-based digital app, it integrates health tracking, mental well-being, and community support to promote personalized, female-specific MS care",
+      // cta: "google.ca",
+      // linkedin: "google.ca",
+      // instagram: "google.ca",
+      image: "/images/SensMS-Banner.jpeg",
     },
   ];
 
