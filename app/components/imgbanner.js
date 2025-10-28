@@ -4,7 +4,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Image from "next/image";
 
-function imgbanner({ header, body, cta1, cta2, instagram, linkedin, img }) {
+function imgbanner({ header, body, cta1, cta2, instagram, linkedin, img, pm1, pm2, pm1contact, pm2contact }) {
   return (
     <div className="flex flex-col gap-[36px]">
       <div className="w-full h-[600px] relative overflow-hidden">
@@ -19,8 +19,29 @@ function imgbanner({ header, body, cta1, cta2, instagram, linkedin, img }) {
       </div>
       <div className="flex flex-col gap-[36px] md:gap-[48px] justify-between h-full ">
         <div className="flex flex-col gap-[16px] h-[100%] w-full ">
-          <h2>{header}</h2>
-          <h3>{body}</h3>
+          <div className='flex flex-row gap-[64px]'>
+            <div className="flex flex-col gap-[16px] justify-between">
+              <h2>{header}</h2>
+              <h3>{body}</h3>
+            </div>
+            {(pm1 || pm2) && (
+              <div className="flex flex-col gap-[16px] min-w-[25%]">
+                <h2>Project Managers</h2>
+                {pm1 && (
+                  <div className="flex-row flex gap-[8px] justify-between">
+                    <h3> {pm1} </h3>
+                    <h3 className='opacity-[60%]'> {pm1contact} </h3>
+                  </div>
+                )}
+                {pm2 && (
+                  <div className="flex-row flex gap-[8px] justify-between">
+                    <h3> {pm2} </h3>
+                    <h3 className='opacity-[60%]'>{pm2contact} </h3>
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
         </div>
 
         {cta1 ?

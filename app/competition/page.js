@@ -85,7 +85,7 @@ function page() {
         </div>
 
         <Image
-          src="/images/competitionCrowd.png"
+          src="/images/competitionBanner.png"
           alt="A group picture of Enactus SFU members"
           width={1920}
           height={1080}

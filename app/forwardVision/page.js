@@ -16,7 +16,7 @@ function page() {
         }
         cta1={"Participant Package"}
         cta2={"Register"}
-        img={"/images/ForwardVision.png"}
+        img={"/images/finalForwardVision.png"}
       />
 
       <div className="section-standard gap-[16px] md:gap-[24px]">

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Button from "../components/button";
@@ -8,11 +9,12 @@ function imgHero({ img, header, subheader, cta1, cta2 }) {
       <section className="flex justify-center relative lg:h-fit h-[40vh]">
         <Image
           src={img}
-          alt={img}
+          alt={`${header} banner image`}
           width={1920}
-          height={1080}
+          height={800}
           className="w-full h-fit"
           priority
+          onError={(e) => console.error('Image failed to load:', img, e)}
         />
 
         {/* Absolutely positioned centered text with golden glow effect */}

@@ -13,6 +13,10 @@ function page() {
       // linkedin: "google.ca",
       // instagram: "google.ca",
       image: "/images/SKYES-Banner.png",
+      pm1: "Wilson Liang",
+      pmc1contact: "",
+      pm2contact: "",
+      pm2: "Francesca Yalung",
     },
     {
       name: "Unify",
@@ -22,6 +26,10 @@ function page() {
       linkedin: "https://www.linkedin.com/company/unify-social/posts/?feedView=all",
       instagram: "https://www.instagram.com/unifysocial.ca/",
       image: "/images/Unify-Banner.png",
+      pm1: "Cedric Tanafranca",
+      pmc1contact: "",
+      pm2contact: "",
+      pm2: "Savar Gupta",
     },
     {
       name: "Alara",
@@ -31,6 +39,10 @@ function page() {
       // linkedin: "google.ca",
       // instagram: "google.ca",
       image: "/images/Alara-Banner.png",
+      pm1: "Jaideep Kochhar",
+      pmc1contact: "",
+      pm2contact: "",
+      pm2: "Ruchi Sharma",
     },
     {
       name: "Nourish",
@@ -40,6 +52,10 @@ function page() {
       // linkedin: "google.ca",
       instagram: "https://www.instagram.com/nourishcandy/",
       image: "/images/Nourish-Banner.png",
+      pm1: "Anthony Perera",
+      pmc1contact: "",
+      // pm2contact: "Savar Gupta",
+      // pm2: "",
     },
 
     {
@@ -50,6 +66,10 @@ function page() {
       // linkedin: "google.ca",
       // instagram: "google.ca",
       image: "/images/NextSpark-Banner.png",
+      pm1: "Michael Gudz",
+      pmc1contact: "",
+      // pm2contact: "Savar Gupta",
+      // pm2: "",
     },
 
     {
@@ -60,6 +80,10 @@ function page() {
       // linkedin: "google.ca",
       // instagram: "google.ca",
       image: "/images/Renovo-Banner.png",
+      pm1: "Valeria Lozada",
+      pmc1contact: "",
+      // pm2contact: "Savar Gupta",
+      // pm2: "",
     },
   ];
 
@@ -156,6 +180,10 @@ function page() {
               instagram={project.instagram}
               linkedin={project.linkedin}
               img={project.image}
+              pm1={project.pm1}
+              pm1contact={project.pm1contact}
+              pm2={project.pm2}
+              pm2contact={project.pm2contact}
             ></ImgBanner>
           </div>
         ))}
