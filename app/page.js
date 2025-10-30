@@ -49,7 +49,8 @@ function page() {
       description:
         "Unify is a digital platform that helps newcomers to Canada feel at home faster by combining trusted information, community connection, and personalized guidance in one place. Through practical lessons, an AI companion, and local events, Unify turns the challenges of settling in Canada into a clear, confident, and connected journey.",
       // cta: "google.ca",
-      linkedin: "https://www.linkedin.com/company/unify-social/posts/?feedView=all",
+      linkedin:
+        "https://www.linkedin.com/company/unify-social/posts/?feedView=all",
       instagram: "https://www.instagram.com/unifysocial.ca/",
       image: "/images/Unify-Banner.png",
     },
@@ -92,7 +93,6 @@ function page() {
       image: "/images/Renovo-Banner.png",
     },
 
-
     {
       name: "SensMS",
       description:
@@ -103,7 +103,6 @@ function page() {
       image: "/images/SensMS-Banner.jpeg",
     },
   ];
-
 
   return (
     <div className="flex flex-col gap-[48px]">
@@ -209,7 +208,7 @@ function page() {
         </div>
       </section>
 
-      <section className="max-[74rem]:section-standard flex flex-col mb-[48px] gap-[20px] w-full mx-auto ">
+      <section className="section-standard flex flex-col mb-[48px] gap-[20px] w-full mx-auto ">
         <div className="flex flex-col min-[74rem]:flex-row gap-[20px] flex-wrap  justify-center">
           {projects.map((project) => (
             <ProjectCard
@@ -220,17 +219,15 @@ function page() {
             ></ProjectCard>
           ))}
         </div>
-
       </section>
 
       <section>
         <ImgCarousel
-          Carousel=
-          {
-            [{ name: "2024", img: "/images/Hero-2024.png" },
+          Carousel={[
+            { name: "2024", img: "/images/Hero-2024.png" },
             { name: "2023", img: "/images/Hero-2023.png" },
-            { name: "2022", img: "/images/Hero-2022.png" }]
-          }
+            { name: "2022", img: "/images/Hero-2022.png" },
+          ]}
         />
       </section>
     </div>
