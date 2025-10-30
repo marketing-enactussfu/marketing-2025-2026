@@ -23,7 +23,8 @@ function page() {
       description:
         "Unify is a digital platform that helps newcomers to Canada feel at home faster by combining trusted information, community connection, and personalized guidance in one place. Through practical lessons, an AI companion, and local events, Unify turns the challenges of settling in Canada into a clear, confident, and connected journey.",
       // cta: "google.ca",
-      linkedin: "https://www.linkedin.com/company/unify-social/posts/?feedView=all",
+      linkedin:
+        "https://www.linkedin.com/company/unify-social/posts/?feedView=all",
       instagram: "https://www.instagram.com/unifysocial.ca/",
       image: "/images/Unify-Banner.png",
       pm1: "Cedric Tanafranca",
@@ -183,7 +184,7 @@ function page() {
 
       <div className="flex flex-col gap-[36px] md:gap-[48px] mb-[24px] md:mb-[48px]">
         {projects.map((project) => (
-          <div key={project.name}>
+          <section id={project.name} key={project.name}>
             <ImgBanner
               header={project.name}
               body={project.description}
@@ -197,7 +198,7 @@ function page() {
               pm2={project.pm2}
               pm2contact={project.pm2contact}
             ></ImgBanner>
-          </div>
+          </section>
         ))}
       </div>
 

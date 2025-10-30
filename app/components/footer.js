@@ -50,19 +50,19 @@ function Footer() {
                         <div className=' flex-1 flex flex-col w-full h-full justify-end lg:mt-[0] md:mt-[0] mt-[64px] '>
                             <div className="flex items-center gap-6  py-[16px] ">
                                 {/* Instagram */}
-                                <a href="https://www.instagram.com/enactussfu/" aria-label="Instagram" className="group">
+                                <a href="https://www.instagram.com/enactussfu/" aria-label="Instagram" target="_blank" className="group">
                                     <div className="grid h-[40px] w-[40px] place-items-center rounded-full bg-[#262626]">
                                         <Icon path={mdiInstagram} size={1} className="text-white" />
                                     </div>
                                 </a>
                                 {/* LinkedIn */}
-                                <a href="https://www.linkedin.com/company/enactussfu/?originalSubdomain=ca" aria-label="LinkedIn" className="group">
+                                <a href="https://www.linkedin.com/company/enactussfu/?originalSubdomain=ca" aria-label="LinkedIn" target="_blank" className="group">
                                     <div className="grid h-[40px] w-[40px] place-items-center rounded-full bg-[#262626]">
                                         <Icon path={mdiLinkedin} size={1} className="text-white" />
                                     </div>
                                 </a>
                                 {/* Email (copies) */}
-                                <button type="button" onClick={handleCopyEmail} aria-label="Copy email address" className="group">
+                                <button type="button" onClick={handleCopyEmail} aria-label="Copy email address" target="_blank" className="group">
                                     <div className="grid h-[40px] w-[40px] place-items-center rounded-full bg-[#262626]">
                                         <Icon path={mdiEmailOutline} size={1} className="text-white" />
                                     </div>
@@ -112,11 +112,11 @@ function Footer() {
                             <div className="text-[14px] font-semibold tracking-[-0.025em] text-[#FFC220]">Projects</div>
                             <div className="space-y-4 text-[14px] text-[#D4D4D4] flex flex-col">
                                 {[
-                                    { name: "Unify", link: "/projects#unify" },
-                                    { name: "SKYES", link: "/projects#skyes" },
-                                    { name: "Alara", link: "/projects#alara" },
-                                    { name: "Nourish", link: "/projects#nourish" },
-                                    { name: "NextSpark", link: "/projects#nextspark" }
+                                    { name: "Unify", link: "/projects#Unify" },
+                                    { name: "SKYES", link: "/projects#SKYES" },
+                                    { name: "Alara", link: "/projects#Alara" },
+                                    { name: "Nourish", link: "/projects#Nourish" },
+                                    { name: "NextSpark", link: "/projects#NextSpark" }
                                 ].map((project) => (
                                     <a key={project.name} href={project.link} className="transition ease-in-out duration-100 hover:underline hover:cursor-pointer">
                                         {project.name}

@@ -25,12 +25,12 @@ function page() {
     ]
     const projectList = [
         // Project Operations
-        { name: "Wilson Liang", position: "Co-PM of SKYES", img: "/images/wilson.png", linkedin: "https://www.linkedin.com/in/wilson-liang1/" },
-        { name: "Francesca Yalung", position: "Co-PM of SKYES", img: "/images/francesca.png", linkedin: "https://www.linkedin.com/in/francesca-yalung-011b79229/" },
-        { name: "Cedric Tanafranca", position: "Co-PM of Unify", img: "/images/cedric.png", linkedin: "https://www.linkedin.com/in/francesca-yalung-011b79229/" },
-        { name: "Savar Gupta", position: "Co-PM of Unify", img: "/images/savar.png", linkedin: "https://www.linkedin.com/in/savar-gupta/" },
-        { name: "Ruchi Sharma", position: "Co-PM of Alara", img: "/images/ruchi.png", linkedin: "https://www.linkedin.com/in/ruchisharmaa/" },
-        { name: "Jaideep Kochhar", position: "Co-PM of Alara", img: "/images/jaideep.png", linkedin: "https://www.linkedin.com/in/jaideep2k/" },
+        { name: "Wilson Liang", position: "PM of SKYES", img: "/images/wilson.png", linkedin: "https://www.linkedin.com/in/wilson-liang1/" },
+        { name: "Francesca Yalung", position: "PM of SKYES", img: "/images/francesca.png", linkedin: "https://www.linkedin.com/in/francesca-yalung-011b79229/" },
+        { name: "Cedric Tanafranca", position: "PM of Unify", img: "/images/cedric.png", linkedin: "https://www.linkedin.com/in/francesca-yalung-011b79229/" },
+        { name: "Savar Gupta", position: "PM of Unify", img: "/images/savar.png", linkedin: "https://www.linkedin.com/in/savar-gupta/" },
+        { name: "Ruchi Sharma", position: "PM of Alara", img: "/images/ruchi.png", linkedin: "https://www.linkedin.com/in/ruchisharmaa/" },
+        { name: "Jaideep Kochhar", position: "PM of Alara", img: "/images/jaideep.png", linkedin: "https://www.linkedin.com/in/jaideep2k/" },
         { name: "Anthony Perera", position: "PM of Nourish", img: "/images/anthony.png", linkedin: "https://www.linkedin.com/in/anthonyjperera/" },
     ];
     return (

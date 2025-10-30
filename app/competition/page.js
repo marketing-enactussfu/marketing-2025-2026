@@ -28,7 +28,7 @@ function page() {
       header: "2022–2023",
       subheader1: "Regionals",
       body1:
-        "1st Place (Innovation and Impact), 2nd Place (Entrepreneurship), 2nd Place (Environmental Sustainability), 3rd Place (Climate Action)",
+        "1st Place (Innovation and Impact), 3rdd Place (Entrepreneurship), 2nd Place (Environmental Sustainability), 3rd Place (Climate Action)",
       subheader2: "",
       body2: "",
     },
