@@ -53,17 +53,16 @@ function Navbar() {
                             {navItems.map((item) => {
                                 const isActive = pathname === item.link;
                                 return (
-                                    <Link
+                                    <button
                                         key={item.label}
-                                        href={item.link}
                                         className={` leading-none transition-all ${isActive
                                             ? "text-[#ED8B6E] font-semibold"
                                             : "text-white opacity-60 hover:opacity-100"
                                             }`}
-                                        onClick={() => setOpen(false)}
+                                        onClick={() => console.log("close nav")}
                                     >
-                                        <h5>{item.label}</h5>
-                                    </Link>
+                                        <a href={item.link}> <h5>{item.label}</h5> </a>
+                                    </button>
                                 );
                             })}
                         </nav>
