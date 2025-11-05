@@ -210,7 +210,7 @@ function page() {
       </section>
 
       <section className="max-[74rem]:section-standard flex flex-col mb-[48px] gap-[20px] w-full mx-auto ">
-        <div className="flex flex-col min-[74rem]:flex-row gap-[20px] flex-wrap  justify-center">
+        <div className="flex lg:flex-row flex-col lg:mx-[40px] mx-[24px]  gap-[20px] flex-wrap  justify-center">
           {projects.map((project) => (
             <ProjectCard
               key={project.name}

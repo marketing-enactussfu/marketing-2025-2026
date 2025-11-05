@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function projectCard({ img, header, body }) {
   return (
-    <div className="relative w-full flex flex-grow rounded-[16px] max-w-[45%] h-[400px] overflow-hidden group">
+    <div className="relative w-full flex flex-grow rounded-[16px] lg:max-w-[45%] h-[400px] overflow-hidden group">
       <Image
         src={img}
         alt={header}

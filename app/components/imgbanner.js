@@ -17,25 +17,25 @@ function imgbanner({ header, body, cta1, cta2, instagram, linkedin, img, pm1, pm
           unoptimized
         />
       </div>
-      <div className="flex flex-col gap-[36px] md:gap-[48px] justify-between h-full ">
+      <div className="flex flex-col gap-[12px] md:gap-[48px] justify-between h-full ">
         <div className="flex flex-col gap-[16px] h-[100%] w-full ">
-          <div className='flex flex-row gap-[64px]'>
+          <div className='flex lg:flex-row flex-wrap flex-col gap-[16px] '>
             <div className="flex flex-col gap-[16px] justify-between">
               <h2>{header}</h2>
               <h3>{body}</h3>
             </div>
             {(pm1 || pm2) && (
-              <div className="flex flex-col gap-[16px] min-w-[25%]">
-                <h2>Project Managers</h2>
+              <div className="flex flex-ropw gap-[16px] min-w-[25%]">
+                <h3>Project Managers</h3>
                 {pm1 && (
                   <div className="flex-row flex gap-[8px] justify-between">
-                    <h3> {pm1} </h3>
+                    <h3 className='opacity-[60%]'> {pm1} </h3>
                     <h3 className='opacity-[60%]'> {pm1contact} </h3>
                   </div>
                 )}
                 {pm2 && (
                   <div className="flex-row flex gap-[8px] justify-between">
-                    <h3> {pm2} </h3>
+                    <h3 className='opacity-[60%]'> {pm2} </h3>
                     <h3 className='opacity-[60%]'>{pm2contact} </h3>
                   </div>
                 )}
@@ -89,7 +89,7 @@ function imgbanner({ header, body, cta1, cta2, instagram, linkedin, img, pm1, pm
           )
         }
       </div>
-    </div>
+    </div >
   );
 }
 
