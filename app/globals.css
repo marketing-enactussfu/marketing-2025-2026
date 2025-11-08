@@ -113,7 +113,7 @@ label {
 }
 
 .hero-text {
-  font-size: 5vw;
+  font-size: clamp(1.5rem, 5vw, 5vw);
   font-family: "Impact";
   line-height: 95%;
 }

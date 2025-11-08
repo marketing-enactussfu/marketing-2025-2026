@@ -8,7 +8,7 @@ import ImgCarousel from "../components/imgCarousel";
 
 function page() {
   return (
-    <div className="flex flex-col gap-[16px] md:gap-[64px] pb-[48px]">
+    <div className="flex flex-col mt-[16px] md:mt-0 gap-[16px] md:gap-[64px] pb-[48px]">
       <ImgHero
         header={"Forward Vision"}
         subheader={

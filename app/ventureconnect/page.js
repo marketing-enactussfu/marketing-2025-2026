@@ -1,15 +1,14 @@
-import React from 'react'
-import IconLabel from '../components/iconLabel'
-import ImgHero from '../components/imgHero'
-import Image from "next/image"
+import React from "react";
+import IconLabel from "../components/iconLabel";
+import ImgHero from "../components/imgHero";
+import Image from "next/image";
 import { MdPeople, MdHandshake } from "react-icons/md";
-import Button from "../components/button"
-import ImgCarousel from '../components/imgCarousel';
-
+import Button from "../components/button";
+import ImgCarousel from "../components/imgCarousel";
 
 function page() {
   return (
-    <div className="flex flex-col gap-[16px] md:gap-[64px] pb-[48px]">
+    <div className="flex flex-col mt-[16px] md:mt-0 gap-[16px] md:gap-[64px] pb-[48px]">
       <ImgHero
         header={"Venture Connect"}
         subheader={
@@ -29,7 +28,7 @@ function page() {
         </h3>
       </div>
 
-      <section className="padding flex flex-col md:flex-row gap-[16px] md:gap-[24px]">
+      <section className="section-standard flex flex-col md:flex-row gap-[16px] md:gap-[24px]">
         <IconLabel
           header={"Meaningful Connections"}
           subheader={"Event Objective"}
@@ -51,12 +50,11 @@ function page() {
 
       <div className="flex flex-col gap-[24px] padding">
         <ImgCarousel
-          Carousel=
-          {
-            [{ name: "", img: "/images/VentureConnect1.jpg" },
+          Carousel={[
+            { name: "", img: "/images/VentureConnect1.jpg" },
             { name: "", img: "/images/VentureConnect2.jpg" },
-            { name: "", img: "/images/VentureConnect3.jpg" }]
-          }
+            { name: "", img: "/images/VentureConnect3.jpg" },
+          ]}
         />
 
         <div className="flex justify-center md:justify-normal pb-[24px]">

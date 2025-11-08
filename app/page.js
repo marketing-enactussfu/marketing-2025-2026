@@ -105,14 +105,14 @@ function page() {
   ];
 
   return (
-    <div className="flex flex-col gap-[48px]">
-      <section className="flex justify-center relative">
+    <div className="flex flex-col gap-[32px] md:gap-[48px]">
+      <section className="flex justify-center relative h-[250px] min-[30rem]:h-auto overflow-hidden">
         <Image
           src="/images/hero.png"
           alt="Hero Image"
           width={1920}
           height={1080}
-          className="w-full h-auto saturate-85"
+          className="object-cover saturate-85"
           priority
         />
 
@@ -132,7 +132,7 @@ function page() {
         </div>
       </section>
 
-      <section className="section-standard mb-[48px]">
+      <section className="padding mb-[48px]">
         <div className="flex flex-col gap-[12px]">
           <h2>
             {" "}
@@ -158,7 +158,7 @@ function page() {
       </section>
 
       <section className="section-standard">
-        <div className="flex flex-col gap-[20px] w-fill ">
+        <div className="flex flex-col gap-[16px] w-fill ">
           {items.map((item) => {
             const IconComponent = item.icons;
 
@@ -209,7 +209,7 @@ function page() {
       </section>
 
       <section className="section-standard flex flex-col mb-[48px] gap-[20px] w-full mx-auto ">
-        <div className="flex flex-col min-[74rem]:flex-row gap-[20px] flex-wrap  justify-center">
+        <div className="flex flex-col lg:flex-row gap-[20px] flex-wrap  justify-center">
           {projects.map((project) => (
             <ProjectCard
               key={project.name}

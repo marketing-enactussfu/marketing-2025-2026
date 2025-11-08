@@ -7,7 +7,7 @@ import Image from "next/image";
 function imgbanner({ header, body, cta1, cta2, instagram, linkedin, img, pm1, pm2, pm1contact, pm2contact }) {
   return (
     <div className="flex flex-col gap-[36px]">
-      <div className="w-full h-[600px] relative overflow-hidden">
+      <div className="w-full h-[300px] md:h-[450px] lg:h-[600px] relative overflow-hidden">
         <Image
           src={img}
           alt="Hero Image"
@@ -19,14 +19,14 @@ function imgbanner({ header, body, cta1, cta2, instagram, linkedin, img, pm1, pm
       </div>
       <div className="flex flex-col gap-[36px] md:gap-[48px] justify-between h-full ">
         <div className="flex flex-col gap-[16px] h-[100%] w-full ">
-          <div className='flex flex-row gap-[64px]'>
+          <div className='flex flex-col md:flex-row gap-[32px] md:gap-[64px]'>
             <div className="flex flex-col gap-[16px] justify-between">
               <h2>{header}</h2>
               <h3>{body}</h3>
             </div>
             {(pm1 || pm2) && (
-              <div className="flex flex-col gap-[16px] min-w-[25%]">
-                <h2>Project Managers</h2>
+              <div className="flex flex-col gap-[8px] min-w-[25%]">
+                <h2 className="mb-2">Project Managers</h2>
                 {pm1 && (
                   <div className="flex-row flex gap-[8px] justify-between">
                     <h3> {pm1} </h3>

@@ -67,7 +67,7 @@ function page() {
   ];
 
   return (
-    <div className="flex flex-col gutter gap-[124px]">
+    <div className="flex flex-col gutter gap-[80px] md:gap-[124px]">
       <div className="flex flex-col gap-[0px]">
         <div className="flex flex-col gap-[24px]">
           <h1> Competition </h1>
@@ -94,7 +94,7 @@ function page() {
         />
       </div>
 
-      <section className="flex flex-col gap-[64px] w-[100%]">
+      <section className="flex flex-col gap-[48px] lg:gap-[64px] w-[100%]">
         <div className="flex flex-col gap-[24px]">
           <div className="flex flex-col gap-[12px]">
             <h5 className="text-primary-yellow"> 2025 </h5>
@@ -139,7 +139,7 @@ function page() {
         </div>
       </section>
 
-      <section className="flex flex-col gap-[64px] w-[100%]">
+      <section className="flex flex-col gap-[48px] lg:gap-[64px] w-[100%]">
         <div className="flex flex-col gap-[24px]">
           <div className="flex flex-col gap-[12px]">
             <h5 className="text-primary-yellow"> 2025 </h5>
@@ -154,7 +154,8 @@ function page() {
         </div>
 
         <div className="flex flex-col gap-[48px]">
-          <div className="flex flex-col lg:flex-row w-[100%] gap-[16px] w-[100%]s">
+          <div className="flex flex-col lg:flex-row w-[100%] gap-[32px]">
+            {/* 1st place */}
             <div className="flex flex-col gap-[32px] w-[100%]">
               <Image
                 src="/images/entre.png"
@@ -174,6 +175,7 @@ function page() {
                 <h3>Coaches: Brandon Xu, Cameron Miranda, Colin Jeon</h3>
               </div>
             </div>
+            {/* 2nd place */}
             <div className="flex flex-col gap-[32px] w-[100%]">
               <Image
                 src="/images/ye1.png"
@@ -195,8 +197,8 @@ function page() {
             </div>
           </div>
 
-          <div className="flex flex-col lg:flex-row gap-[16px] w-[100%]">
-            <div className="flex flex-col gap-[16px] w-[100%]">
+          <div className="flex flex-col lg:flex-row gap-[32px] w-[100%]">
+            <div className="flex flex-col gap-[32px] w-[100%]">
               <Image
                 src="/images/inno.png"
                 alt="Hero Image"
@@ -215,7 +217,7 @@ function page() {
                 <h3>Coaches: Sandra Chen & Devan Parmar</h3>
               </div>
             </div>
-            <div className="flex flex-col gap-[16px] w-[100%]">
+            <div className="flex flex-col gap-[32px] w-[100%]">
               <Image
                 src="/images/env.png"
                 alt="Hero Image"
@@ -238,7 +240,7 @@ function page() {
         </div>
       </section>
 
-      <section className="flex flex-col gap-[64px]">
+      <section className="flex flex-col gap-[32px] md:gap-[48px] lg:gap-[64px]">
         <h3 className="text-primary-yellow"> Previous Years </h3>
         <div className="flex flex-col gap-[16px]">
           {achievements.map((project) => (
