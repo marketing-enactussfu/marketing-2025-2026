@@ -94,7 +94,7 @@ label {
 }
 
 .gutter {
-  padding: 16px 24px;
+  padding: 24px 24px;
 }
 
 /* Section Styles */
@@ -122,11 +122,11 @@ label {
 /* Mobile styles go here */
 @media (max-width: 768px) {
   .gutter {
-    padding: 0px 24px 32px 24px;
+    padding: 24px 24px 32px 24px;
   }
 
   .section-standard {
-    padding: 0px 24px 32px 24px;
+    padding: 24px 24px 32px 24px;
   }
 }
 
@@ -141,6 +141,7 @@ label {
   }
 
   .padding {
+    padding-top: 48px;
     padding-inline: 64px;
   }
 

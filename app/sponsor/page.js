@@ -147,9 +147,9 @@ function page() {
   ];
 
   return (
-    <div className="section-standard gap-[128px]">
-      <div className="flex flex-col mt-12 mb-12">
-        <h3 className="text-primary-yellow">Sponsorships</h3>
+    <div className="gutter flex flex-col gap-[54px] md:gap-[64px] lg:gap-[128px]">
+      <div className="">
+        <h3 className="text-primary-yellow mb-5">Sponsorships</h3>
 
         <h1>Thank you to all our partners and sponsors!</h1>
 
@@ -163,10 +163,10 @@ function page() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-4 mb-12">
+      <div className="flex flex-col gap-4">
         <h1>Our Partners</h1>
 
-        <div className="flex flex-col md:flex-row gap-[20px] mb-12 justify-baseline">
+        <div className="flex flex-col md:flex-row gap-[20px] justify-baseline">
           <SponsorBanner
             img="/images/EnactusLogo.png"
             sponsor="Enactus Canada"
@@ -182,7 +182,7 @@ function page() {
           ></SponsorBanner>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-[16px] md:gap-[20px] mb-[20px] mt-[32px]">
+        <div className="flex flex-wrap justify-center gap-[16px] md:gap-[20px]">
           {partnerList.map((sponsor) => (
             <SponsorImgMed
               key={sponsor.sponsor}
@@ -196,9 +196,9 @@ function page() {
       </div>
 
       <div>
-        <h1 className="mt-8 mb-8">Our Partners for Forward Vision</h1>
+        <h1 className="mb-8">Our Partners for Forward Vision</h1>
 
-        <div className="flex flex-wrap justify-center gap-[16px] md:gap-[20px] mb-[20px]">
+        <div className="flex flex-wrap justify-center gap-[16px] md:gap-[20px]">
           {forwardVisionList.map((sponsor) => (
             <SponsorImgSmall
               key={sponsor.sponsor}
@@ -211,26 +211,21 @@ function page() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-4 mt-[64px] mb-[32px] lg:max-w-[60vw]">
+      <div className="flex flex-col gap-4 lg:max-w-[60vw]">
         <h1>Interested in becoming a partner?</h1>
         <h3 className="text-white">
-          If you would like to partner with us, you can contact us here at the button below and one
-          of our staff members will get back to you.
+          If you would like to partner with us, you can contact us here at the
+          button below and one of our staff members will get back to you.
         </h3>
-        <Button size="large" variant="primary" className="my-[32px]" cta="mailto:info@enactus.com">
+        <Button
+          size="large"
+          variant="primary"
+          className="my-[32px]"
+          cta="mailto:info@enactus.com"
+        >
           Get In Contact With Us
         </Button>
       </div>
-      {/* 
-      <div className="flex flex-col gap-4 mb-4">
-        <div className="flex gap-4 sm:flex-col md:flex-col lg:grow lg:flex-row">
-          <FormField field="First Name"></FormField>
-          <FormField field="Last Name"></FormField>
-        </div>
-        <FormField field="Phone"></FormField>
-        <FormField field="Email"></FormField>
-        <FormField field="Message"></FormField>
-      </div> */}
     </div>
   );
 }

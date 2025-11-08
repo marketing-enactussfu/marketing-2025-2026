@@ -57,7 +57,7 @@ function page() {
     {
       name: "Alara",
       description:
-        "Meet Alara, an eco-friendly bioplastic born from Earth’s waters, designed for Earth’s future. Alara is leveraging Earth’s natural resources to create a 100% biodegradable bioplastic to tackle the plastic pollution crisis, pushing the economy towards a more sustainable future.",
+        "Meet Alara, an eco-friendly bioplastic born from Earth's waters, designed for Earth's future. Alara is leveraging Earth's natural resources to create a 100% biodegradable bioplastic to tackle the plastic pollution crisis, pushing the economy towards a more sustainable future.",
       // cta: "google.ca",
       // linkedin: "google.ca",
       // instagram: "google.ca",
