@@ -1,18 +1,18 @@
-import React from 'react'
-import IconLabel from '../components/iconLabel'
-import ImgHero from '../components/imgHero'
-import Image from "next/image"
+import React from "react";
+import IconLabel from "../components/iconLabel";
+import ImgHero from "../components/imgHero";
+import Image from "next/image";
 import { MdBolt, MdInsights, MdViewInAr } from "react-icons/md";
 import Button from "../components/button";
 import ImgCarousel from "../components/imgCarousel";
 
 function page() {
   return (
-    <div className="flex flex-col gap-[16px] md:gap-[64px] pb-[48px]">
+    <div className="flex flex-col mt-[16px] md:mt-0 gap-[16px] md:gap-[64px] pb-[48px]">
       <ImgHero
         header={"Forward Vision"}
         subheader={
-          "Showcase your entrepreneurial spirit and skills in our very own competition! Competitors will be tested on their entrepreneurship, social enterprise, and the practical application of their idea that positively impacts society in a pitch style."
+          "Showcase your entrepreneurial spirit and skills in our very own competition! Through a Dragon’s Den style pitch competition, teams will get the chance to build a business idea with the mentorship and guidance of industry professionals and experienced entrepreneurs."
         }
         cta1={"Participant Package"}
         cta2={"Register"}
@@ -76,8 +76,8 @@ function page() {
             ← Return to Events{" "}
           </Button>
         </div>
-      </div >
-    </div >
+      </div>
+    </div>
   );
 }
 

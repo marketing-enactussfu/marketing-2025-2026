@@ -49,14 +49,15 @@ function page() {
       description:
         "Unify is a digital platform that helps newcomers to Canada feel at home faster by combining trusted information, community connection, and personalized guidance in one place. Through practical lessons, an AI companion, and local events, Unify turns the challenges of settling in Canada into a clear, confident, and connected journey.",
       // cta: "google.ca",
-      linkedin: "https://www.linkedin.com/company/unify-social/posts/?feedView=all",
+      linkedin:
+        "https://www.linkedin.com/company/unify-social/posts/?feedView=all",
       instagram: "https://www.instagram.com/unifysocial.ca/",
       image: "/images/Unify-Banner.png",
     },
     {
       name: "Alara",
       description:
-        "Meet Alara, an eco-friendly bioplastic born from Earth’s waters, designed for Earth’s future. Alara is leveraging Earth’s natural resources to create a 100% biodegradable bioplastic to tackle the plastic pollution crisis, pushing the economy towards a more sustainable future.",
+        "Meet Alara, an eco-friendly bioplastic born from Earth's waters, designed for Earth's future. Alara is leveraging Earth's natural resources to create a 100% biodegradable bioplastic to tackle the plastic pollution crisis, pushing the economy towards a more sustainable future.",
       // cta: "google.ca",
       // linkedin: "google.ca",
       // instagram: "google.ca",
@@ -92,7 +93,6 @@ function page() {
       image: "/images/Renovo-Banner.png",
     },
 
-
     {
       name: "SensMS",
       description:
@@ -104,16 +104,15 @@ function page() {
     },
   ];
 
-
   return (
-    <div className="flex flex-col gap-[48px]">
-      <section className="flex justify-center relative">
+    <div className="flex flex-col gap-[32px] md:gap-[48px]">
+      <section className="flex justify-center relative h-[250px] min-[30rem]:h-auto overflow-hidden">
         <Image
           src="/images/hero.png"
           alt="Hero Image"
           width={1920}
           height={1080}
-          className="w-full h-auto saturate-85"
+          className="object-cover saturate-85"
           priority
         />
 
@@ -133,7 +132,7 @@ function page() {
         </div>
       </section>
 
-      <section className="section-standard mb-[48px]">
+      <section className="padding mb-[48px]">
         <div className="flex flex-col gap-[12px]">
           <h2>
             {" "}
@@ -159,7 +158,7 @@ function page() {
       </section>
 
       <section className="section-standard">
-        <div className="flex flex-col gap-[20px] w-fill ">
+        <div className="flex flex-col gap-[16px] w-fill ">
           {items.map((item) => {
             const IconComponent = item.icons;
 
@@ -209,8 +208,8 @@ function page() {
         </div>
       </section>
 
-      <section className="max-[74rem]:section-standard flex flex-col mb-[48px] gap-[20px] w-full mx-auto ">
-        <div className="flex lg:flex-row flex-col lg:mx-[40px] mx-[24px]  gap-[20px] flex-wrap  justify-center">
+      <section className="section-standard flex flex-col mb-[48px] gap-[20px] w-full mx-auto ">
+        <div className="flex flex-col lg:flex-row gap-[20px] flex-wrap  justify-center">
           {projects.map((project) => (
             <ProjectCard
               key={project.name}
@@ -220,17 +219,15 @@ function page() {
             ></ProjectCard>
           ))}
         </div>
-
       </section>
 
       <section>
         <ImgCarousel
-          Carousel=
-          {
-            [{ name: "2024", img: "/images/Hero-2024.png" },
+          Carousel={[
+            { name: "2024", img: "/images/Hero-2024.png" },
             { name: "2023", img: "/images/Hero-2023.png" },
-            { name: "2022", img: "/images/Hero-2022.png" }]
-          }
+            { name: "2022", img: "/images/Hero-2022.png" },
+          ]}
         />
       </section>
     </div>

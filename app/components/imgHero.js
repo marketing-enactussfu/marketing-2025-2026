@@ -6,19 +6,19 @@ import Button from "../components/button";
 function imgHero({ img, header, subheader, cta1, cta2 }) {
   return (
     <div>
-      <section className="flex justify-center relative lg:h-fit h-[40vh]">
+      <section className="flex justify-center relative lg:h-fit h-[40vh] min-h-[450px] min-[23rem]:min-h-[375px] ">
         <Image
           src={img}
           alt={`${header} banner image`}
           width={1920}
           height={800}
-          className="w-full h-fit"
+          className="object-cover"
           priority
           onError={(e) => console.error('Image failed to load:', img, e)}
         />
 
         {/* Absolutely positioned centered text with golden glow effect */}
-        <div className="absolute inset-0 flex items-center flex-col justify-center p-[48px] gap-[24px] h-full">
+        <div className="absolute inset-0 flex items-center flex-col justify-center gutter gap-[24px] h-full">
           <h1 className="w-full text-left">{header}</h1>
           <h2 className="text-primary-yellow text-left w-full">{subheader}</h2>
           {cta2 == null ? (
