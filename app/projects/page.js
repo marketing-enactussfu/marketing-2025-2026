@@ -17,6 +17,7 @@ function page() {
       pmc1contact: "",
       pm2contact: "",
       pm2: "Francesca Yalung",
+      website: "https://skyes-website.vercel.app/"
     },
     {
       name: "Unify",
@@ -197,6 +198,7 @@ function page() {
               pm1contact={project.pm1contact}
               pm2={project.pm2}
               pm2contact={project.pm2contact}
+              website={project.website}
             ></ImgBanner>
           </section>
         ))}

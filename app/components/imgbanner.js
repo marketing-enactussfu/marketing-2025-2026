@@ -2,9 +2,10 @@ import React from "react";
 import Button from "../components/button";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import Image from "next/image";
 
-function imgbanner({ header, body, cta1, cta2, instagram, linkedin, img, pm1, pm2, pm1contact, pm2contact }) {
+function imgbanner({ header, body, cta1, cta2, instagram, linkedin, img, pm1, pm2, pm1contact, pm2contact, website }) {
   return (
     <div className="flex flex-col gap-[36px]">
       <div className="w-full h-[300px] md:h-[450px] lg:h-[600px] relative overflow-hidden">
@@ -39,6 +40,11 @@ function imgbanner({ header, body, cta1, cta2, instagram, linkedin, img, pm1, pm
                     <h3 className='opacity-[60%]'>{pm2contact} </h3>
                   </div>
                 )}
+                <div className="h-full flex flex-col justify-end">
+                  {website && (
+                    <a href={website} target="_blank" className='hover:cursor-pointer hover:underline'> <div className='flex flex-row-reverse gap-[0.5rem] w-full items-center'><FaExternalLinkAlt /><h3>Website </h3></div></a>
+                  )}
+                </div>
               </div>
             )}
           </div>
