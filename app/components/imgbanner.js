@@ -40,7 +40,7 @@ function imgbanner({ header, body, cta1, cta2, instagram, linkedin, img, pm1, pm
                     <h3 className='opacity-[60%]'>{pm2contact} </h3>
                   </div>
                 )}
-                <div className="h-full flex flex-col justify-end">
+                <div className="h-full flex flex-col justify-end w-full items-start">
                   {website && (
                     <a href={website} target="_blank" className='hover:cursor-pointer hover:underline'> <div className='flex flex-row-reverse gap-[0.5rem] w-full items-center'><FaExternalLinkAlt /><h3>Website </h3></div></a>
                   )}
