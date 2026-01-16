@@ -5,6 +5,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import Image from "next/image";
 
+
 function imgbanner({ header, body, cta1, cta2, instagram, linkedin, img, pm1, pm2, pm1contact, pm2contact, website }) {
   return (
     <div className="flex flex-col gap-[36px]">
@@ -40,9 +41,13 @@ function imgbanner({ header, body, cta1, cta2, instagram, linkedin, img, pm1, pm
                     <h3 className='opacity-[60%]'>{pm2contact} </h3>
                   </div>
                 )}
-                <div className="h-full flex flex-col justify-end w-full items-start">
+                <div className="h-full flex flex-col justify-end w-full items-start mt-[1rem]">
                   {website && (
-                    <a href={website} target="_blank" className='hover:cursor-pointer hover:underline'> <div className='flex flex-row-reverse gap-[0.5rem] w-full items-center'><FaExternalLinkAlt /><h3>Website </h3></div></a>
+
+                    <Button cta={website} size="small" style="primary">
+                      <div className='flex flex-row gap-[0.5rem] w-full items-center'><FaExternalLinkAlt /><h3>Website </h3></div>
+                    </Button>
+                    // <a href={website} target="_blank" className='hover:cursor-pointer hover:underline'> <div className='flex flex-row-reverse gap-[0.5rem] w-full items-center'><FaExternalLinkAlt /><h3>Website </h3></div></a>
                   )}
                 </div>
               </div>
