@@ -116,7 +116,8 @@ function Footer() {
                                     { name: "SKYES", link: "/projects#SKYES" },
                                     { name: "Alara", link: "/projects#Alara" },
                                     { name: "Nourish", link: "/projects#Nourish" },
-                                    { name: "NextSpark", link: "/projects#NextSpark" }
+                                    { name: "NextSpark", link: "/projects#NextSpark" },
+                                    { name: "Second Savour", link: "/projects#Second Savour" }
                                 ].map((project) => (
                                     <a key={project.name} href={project.link} className="transition ease-in-out duration-100 hover:underline hover:cursor-pointer">
                                         {project.name}

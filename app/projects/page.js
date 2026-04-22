@@ -17,7 +17,7 @@ function page() {
       pmc1contact: "",
       pm2contact: "",
       pm2: "Francesca Yalung",
-      website: "https://skyes-website.vercel.app/"
+      website: "https://skyes-website.vercel.app/",
     },
     {
       name: "Unify",
@@ -99,15 +99,19 @@ function page() {
       // pm2contact: "Savar Gupta",
       pm2: "Aryan Kaul",
     },
-  ];
 
-  const pastProjects = [
     {
       name: "Second Savour",
       description:
-        "We are Second Savour, where purpose meets palate. As a student-led social enterprise, our mission is to rescue rejected produce surplus and transform it into nutritious, long-lasting food items. We're not just about sustenance; we're on a mission to raise awareness about sustainable food consumption, sparking a collective reevaluation of our consumption habits.",
-      year: "2023–2025",
+        "Second Savour reduces food waste by upcycling discarded citrus peels into delicious candied treats. Founded by SFU students in Burnaby, BC, it transforms produce that would otherwise be thrown away into a sweet, sustainable snack — leaving no part of the fruit behind.",
+      image: "/images/secondsavour-banner.png",
+      pm1: "Justin Cheung",
+      pmc1contact: "",
+      website: "https://www.secondsavour.ca/",
     },
+  ];
+
+  const pastProjects = [
     {
       name: "The Beekind Company",
       description:

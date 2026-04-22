@@ -102,6 +102,13 @@ function page() {
       // instagram: "google.ca",
       image: "/images/SensMS-Banner.jpeg",
     },
+
+    {
+      name: "Second Savour",
+      description:
+        "Second Savour reduces food waste by upcycling discarded citrus peels into delicious candied treats. Founded by SFU students in Burnaby, BC, it transforms produce that would otherwise be thrown away into a sweet, sustainable snack — leaving no part of the fruit behind.",
+      image: "/images/secondsavour-banner.png",
+    },
   ];
 
   return (
