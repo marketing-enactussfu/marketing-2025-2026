@@ -8,6 +8,14 @@ import YearLabel from "../components/yearLabel";
 function page() {
   const achievements = [
     {
+      header: "2025–2026",
+      subheader1: "Regionals",
+      body1:
+        "1st Place (Entrepreneurship), 1st Place (Community Empowerment), 2nd Place (Environmental Sustainability), 2nd Place (Innovation & Impact)",
+      subheader2: "",
+      body2: "",
+    },
+    {
       header: "2024–2025",
       subheader1: "Nationals",
       body1: "Semi-finalist (top 20 out of 80+ schools in Canada)",
@@ -93,6 +101,105 @@ function page() {
           priority
         />
       </div>
+
+      <section className="flex flex-col gap-[48px] lg:gap-[64px] w-[100%]">
+        <div className="flex flex-col gap-[24px]">
+          <div className="flex flex-col gap-[12px]">
+            <h5 className="text-primary-yellow"> 2026 </h5>
+            <h1> Regionals </h1>
+          </div>
+          <h3>
+            {" "}
+            This year, Simon Fraser University placed in all four categories,
+            winning 1st in both the Entrepreneurship and Community Empowerment
+            Challenges.
+          </h3>
+        </div>
+
+        <div className="flex flex-col gap-[48px]">
+          <div className="flex flex-col lg:flex-row w-[100%] gap-[32px]">
+            <div className="flex flex-col gap-[32px] w-[100%]">
+              <Image
+                src="/images/entre-new.png"
+                alt="Entrepreneurship Challenge"
+                width={1920}
+                height={1080}
+                className="w-[100%] h-auto"
+                priority
+              />
+              <h2 className="text-primary-red">
+                {" "}
+                1st Place — Entrepreneurship Challenge{" "}
+              </h2>
+              <div className="flex flex-col gap-[2px]">
+                <h3>Presenters: Ak, Francesca</h3>
+                <h3>Designer: Neal Sison</h3>
+                <h3>Coaches: Brandon Xu, David Guo, Eva Yueng</h3>
+              </div>
+            </div>
+            <div className="flex flex-col gap-[32px] w-[100%]">
+              <Image
+                src="/images/ce-new.png"
+                alt="Community Empowerment Challenge"
+                width={1920}
+                height={1080}
+                className="w-[100%] h-auto"
+                priority
+              />
+              <h2 className="text-primary-red">
+                {" "}
+                1st Place — Community Empowerment Challenge{" "}
+              </h2>
+              <div className="flex flex-col gap-[2px]">
+                <h3>Presenters: Patty R., Liam Santos</h3>
+                <h3>Designer: Ellie Kim</h3>
+                <h3>Coaches: Wayne Yan Muk, Rachel Vicencio</h3>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col lg:flex-row gap-[32px] w-[100%]">
+            <div className="flex flex-col gap-[32px] w-[100%]">
+              <Image
+                src="/images/env-new.png"
+                alt="Environmental Sustainability Challenge"
+                width={1920}
+                height={1080}
+                className="w-[100%] h-auto"
+                priority
+              />
+              <h2 className="text-primary-red">
+                {" "}
+                2nd Place — Environmental Sustainability Challenge{" "}
+              </h2>
+              <div className="flex flex-col gap-[2px]">
+                <h3>Presenters: Winnie Wang, Hussain Naqvi</h3>
+                <h3>Designer: Rebecca Yeung</h3>
+                <h3>Coaches: Harneet Gill, Sophia Nguyen</h3>
+              </div>
+            </div>
+            <div className="flex flex-col gap-[32px] w-[100%]">
+              <Image
+                src="/images/inno-new.png"
+                alt="Innovation & Impact Challenge"
+                width={1920}
+                height={1080}
+                className="w-[100%] h-auto"
+                priority
+              />
+              <h2 className="text-primary-red">
+                {" "}
+                2nd Place — Innovation &amp; Impact Challenge{" "}
+              </h2>
+              <div className="flex flex-col gap-[2px]">
+                <h3>Presenters: Joaquin Ofreneo, Michelle So</h3>
+                <h3>Designer: Michelle Lee</h3>
+                <h3>Coaches: Daniel Furlot, Tim MacDougal</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="flex flex-col gap-[48px] lg:gap-[64px] w-[100%]">
         <div className="flex flex-col gap-[24px]">

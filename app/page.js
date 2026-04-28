@@ -80,7 +80,7 @@ function page() {
       // cta: "google.ca",
       // linkedin: "google.ca",
       // instagram: "google.ca",
-      image: "/images/NextSpark-Banner.jpg",
+      image: "/images/nextspark-new.svg",
     },
 
     {
@@ -90,7 +90,7 @@ function page() {
       // cta: "google.ca",
       // linkedin: "google.ca",
       // instagram: "google.ca",
-      image: "/images/Renovo-Banner.png",
+      image: "/images/renovo-new.png",
     },
 
     {
