@@ -1,0 +1,15 @@
+name: Notify Caleb Jr on merge
+
+# When a PR is merged, ping Caleb Jr so it notifies the requester instantly
+# (no repo webhook needed — we lack admin to add one here). The endpoint is
+# idempotent and only notifies for PRs GitHub confirms are merged.
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  notify:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl -fsS -X POST https://enactus-caleb-jr.vercel.app/api/agent/settle
