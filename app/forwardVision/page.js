@@ -14,8 +14,6 @@ function page() {
         subheader={
           "Showcase your entrepreneurial spirit and skills in our very own competition! Through a Dragon’s Den style pitch competition, teams will get the chance to build a business idea with the mentorship and guidance of industry professionals and experienced entrepreneurs."
         }
-        cta1={"Participant Package"}
-        cta2={"Register"}
         img={"/images/finalForwardVision.png"}
       />
 
