@@ -21,21 +21,23 @@ function imgHero({ img, header, subheader, cta1, cta2 }) {
         <div className="absolute inset-0 flex items-center flex-col justify-center gutter gap-[24px] h-full">
           <h1 className="w-full text-left">{header}</h1>
           <h2 className="text-primary-yellow text-left w-full">{subheader}</h2>
-          {cta2 == null ? (
-            <div className="flex flex-row gap-[24px] justify-center">
-              <Button size="large" style="primary" onClick={() => alert("This event is currently not available yet!")}>
-                {cta1}
-              </Button>
-            </div>
-          ) : (
-            <div className="flex flex-row gap-[24px] w-full justify-start">
-              <Button size="large" style="primary">
-                {cta1}
-              </Button>
-              <Button size="large" style="primary">
-                {cta2}
-              </Button>
-            </div>
+          {cta1 && (
+            cta2 == null ? (
+              <div className="flex flex-row gap-[24px] justify-center">
+                <Button size="large" style="primary" onClick={() => alert("This event is currently not available yet!")}>
+                  {cta1}
+                </Button>
+              </div>
+            ) : (
+              <div className="flex flex-row gap-[24px] w-full justify-start">
+                <Button size="large" style="primary">
+                  {cta1}
+                </Button>
+                <Button size="large" style="primary">
+                  {cta2}
+                </Button>
+              </div>
+            )
           )}
         </div>
       </section>

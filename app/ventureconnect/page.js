@@ -14,8 +14,6 @@ function page() {
         subheader={
           "Venture Connect is an afternoon workshop and fireside chat event that provides aspiring entrepreneurs with the opportunity to create meaningful connections with successful entrepreneurs."
         }
-        cta1={"Participant Package"}
-        cta2={"Register"}
         img={"/images/ventureConnect 2.png"}
       />
 
