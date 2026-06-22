@@ -9,7 +9,7 @@ function leadership({ img, name, position, linkedin, key }) {
     >
       <div className="relative w-full">
         <a href={linkedin} target="_blank">
-          <div className="w-full h-full bg-gradient-to-br from-[#0076DD] to-[#0047C7] absolute hover:opacity-[20%] opacity-[0] hover:cursor-pointer duration-300 transition-ease-in-out"></div>
+          <div className="w-full h-full bg-gradient-to-br from-[#DD7600] to-[#C80D00] absolute hover:opacity-[20%] opacity-[0] hover:cursor-pointer duration-300 transition-ease-in-out"></div>
         </a>
         <Image
           src={img}
