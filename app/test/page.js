@@ -120,7 +120,7 @@ function Page() {
             />
 
             <h1>H1, Hello</h1>
-            <h2 className='text-red-500'>H2, Hello</h2>
+            <h2 className='text-primary-red'>H2, Hello</h2>
             <h3>H3, Hello</h3>
             <h4>H4, Hello</h4>
             <h5>H5, Hello</h5>
@@ -133,7 +133,7 @@ function Page() {
                 body="We are Second Savour, where purpose meets palate. As a student-led social enterprise, our mission is to rescue rejected produce surplus and transform it into nutritious, long-lasting food items. We're not just about sustenance; we're on a mission to raise awareness about sustainable food consumption, sparking a collective reevaluation of our consumption habits.">
             </Label>
             <IconLabel
-                icon={<BoltIcon fontSize="large" color="#DC5939" />}
+                icon={<BoltIcon fontSize="large" color="#51A2FF" />}
                 header="Pitching Streams"
                 subheader="asdjfisajkf"
                 body="Teams will develop a small enterprise focused on the theme of 'Climate Action'. On the event day, teams will pitch their ideas to a panel of investors to receive fictitious funding for the 'Scale-Up Session'.">

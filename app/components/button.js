@@ -12,12 +12,12 @@ function Button({
   cta,
 }) {
   const baseClasses =
-    "items-center text-white hover:text-black hover:cursor-pointer ease-in-out duration-[300ms] focus:bg-red-600 w-fit font-dm-sans font-[600] text-[16px] leading-[1.4]";
+    "items-center text-white hover:text-black hover:cursor-pointer ease-in-out duration-[300ms] focus:bg-[#51A2FF] w-fit font-dm-sans font-[600] text-[16px] leading-[1.4]";
 
   const variants = {
-    primary: "bg-[#C70D00] hover:bg-primary-red",
+    primary: "bg-[#51A2FF] hover:bg-primary-red",
     disabled: "bg-gray-200 text-gray-400",
-    icon: "pr-[24px] bg-[#C70D00] hover:bg-primary-red",
+    icon: "pr-[24px] bg-[#51A2FF] hover:bg-primary-red",
   };
 
   const sizes = {
