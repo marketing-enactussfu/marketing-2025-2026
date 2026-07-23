@@ -42,7 +42,7 @@ function page() {
       // cta: "google.ca",
       // linkedin: "google.ca",
       // instagram: "google.ca",
-      image: "/images/SKYES-Banner.png",
+      image: "/images/SKYES-Banner.jpg",
     },
     {
       name: "Unify",
@@ -61,7 +61,7 @@ function page() {
       // cta: "google.ca",
       // linkedin: "google.ca",
       // instagram: "google.ca",
-      image: "/images/Alara-Banner.png",
+      image: "/images/Alara-Banner.jpg",
     },
     {
       name: "Nourish",
@@ -80,7 +80,7 @@ function page() {
       // cta: "google.ca",
       // linkedin: "google.ca",
       // instagram: "google.ca",
-      image: "/images/nextspark-new.svg",
+      image: "/images/nextspark-new.jpg",
     },
 
     {
@@ -232,8 +232,8 @@ function page() {
         <ImgCarousel
           Carousel={[
             { name: "2024", img: "/images/Hero-2024.png" },
-            { name: "2023", img: "/images/Hero-2023.png" },
-            { name: "2022", img: "/images/Hero-2022.png" },
+            { name: "2023", img: "/images/Hero-2023.jpg" },
+            { name: "2022", img: "/images/Hero-2022.jpg" },
           ]}
         />
       </section>

@@ -29,17 +29,17 @@ function page() {
     ]
     const projectList = [
         // Project Operations
-        { name: "Wilson Liang", position: "PM of SKYES", img: "/images/wilson2.png", linkedin: "https://www.linkedin.com/in/wilson-liang1/" },
-        { name: "Francesca Yalung", position: "PM of SKYES", img: "/images/franchesca2.png", linkedin: "https://www.linkedin.com/in/francesca-yalung-011b79229/" },
-        { name: "Cedric Tanafranca", position: "PM of Unify", img: "/images/cedric2.png", linkedin: "https://www.linkedin.com/in/francesca-yalung-011b79229/" },
-        { name: "Savar Gupta", position: "PM of Unify", img: "/images/savar2.png", linkedin: "https://www.linkedin.com/in/savar-gupta/" },
-        { name: "Ruchi Sharma", position: "PM of Alara", img: "/images/ruchi2.png", linkedin: "https://www.linkedin.com/in/ruchisharmaa/" },
-        { name: "Jaideep Kochhar", position: "PM of Alara", img: "/images/jai2.png", linkedin: "https://www.linkedin.com/in/jaideep2k/" },
-        { name: "Anthony Perera", position: "PM of Nourish", img: "/images/anthony2.png", linkedin: "https://www.linkedin.com/in/anthonyjperera/" },
-        { name: "Aryan Kaul", position: "PM of SensMS", img: "/images/aryan2.png", linkedin: "https://www.linkedin.com/in/aryan-kaul-b28016275/" },
-        { name: "Hanko Ngu", position: "PM of SensMS", img: "/images/hanko2.png", linkedin: "https://www.linkedin.com/in/hankongu/" },
-        { name: "Valeria Lozada", position: "PM of Renova", img: "/images/val2.png", linkedin: "https://www.linkedin.com/in/valeria-lozada-108150315/" },
-        { name: "Michael Gudz", position: "PM of NextSpark", img: "/images/michael2.png", linkedin: "https://www.linkedin.com/in/michaelgudz123/" },
+        { name: "Wilson Liang", position: "PM of SKYES", img: "/images/wilson2.jpg", linkedin: "https://www.linkedin.com/in/wilson-liang1/" },
+        { name: "Francesca Yalung", position: "PM of SKYES", img: "/images/franchesca2.jpg", linkedin: "https://www.linkedin.com/in/francesca-yalung-011b79229/" },
+        { name: "Cedric Tanafranca", position: "PM of Unify", img: "/images/cedric2.jpg", linkedin: "https://www.linkedin.com/in/francesca-yalung-011b79229/" },
+        { name: "Savar Gupta", position: "PM of Unify", img: "/images/savar2.jpg", linkedin: "https://www.linkedin.com/in/savar-gupta/" },
+        { name: "Ruchi Sharma", position: "PM of Alara", img: "/images/ruchi2.jpg", linkedin: "https://www.linkedin.com/in/ruchisharmaa/" },
+        { name: "Jaideep Kochhar", position: "PM of Alara", img: "/images/jai2.jpg", linkedin: "https://www.linkedin.com/in/jaideep2k/" },
+        { name: "Anthony Perera", position: "PM of Nourish", img: "/images/anthony2.jpg", linkedin: "https://www.linkedin.com/in/anthonyjperera/" },
+        { name: "Aryan Kaul", position: "PM of SensMS", img: "/images/aryan2.jpg", linkedin: "https://www.linkedin.com/in/aryan-kaul-b28016275/" },
+        { name: "Hanko Ngu", position: "PM of SensMS", img: "/images/hanko2.jpg", linkedin: "https://www.linkedin.com/in/hankongu/" },
+        { name: "Valeria Lozada", position: "PM of Renova", img: "/images/val2.jpg", linkedin: "https://www.linkedin.com/in/valeria-lozada-108150315/" },
+        { name: "Michael Gudz", position: "PM of NextSpark", img: "/images/michael2.jpg", linkedin: "https://www.linkedin.com/in/michaelgudz123/" },
     ];
     return (
         <div className='flex flex-col gap-[48px] gutter'>

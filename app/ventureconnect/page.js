@@ -14,7 +14,7 @@ function page() {
         subheader={
           "Venture Connect is an afternoon workshop and fireside chat event that provides aspiring entrepreneurs with the opportunity to create meaningful connections with successful entrepreneurs."
         }
-        img={"/images/ventureConnect 2.png"}
+        img={"/images/ventureConnect 2.jpg"}
       />
 
       <div className="section-standard gap-[16px] md:gap-[24px]">

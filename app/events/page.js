@@ -26,7 +26,7 @@ function page() {
           cta1="Learn More"
           cta1link="./ventureconnect"
           // cta2="Register"
-          img="/images/VentureConnect.png"
+          img="/images/VentureConnect.jpg"
         ></ImgLabel>
       </div>
     </div>

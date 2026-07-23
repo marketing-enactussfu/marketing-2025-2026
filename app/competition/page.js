@@ -93,7 +93,7 @@ function page() {
         </div>
 
         <Image
-          src="/images/competitionBanner.png"
+          src="/images/competitionBanner.jpg"
           alt="A group picture of Enactus SFU members"
           width={1920}
           height={1080}
@@ -120,7 +120,7 @@ function page() {
           <div className="flex flex-col lg:flex-row w-[100%] gap-[32px]">
             <div className="flex flex-col gap-[32px] w-[100%]">
               <Image
-                src="/images/entre-new.png"
+                src="/images/entre-new.jpg"
                 alt="Entrepreneurship Challenge"
                 width={1920}
                 height={1080}
@@ -139,7 +139,7 @@ function page() {
             </div>
             <div className="flex flex-col gap-[32px] w-[100%]">
               <Image
-                src="/images/ce-new.png"
+                src="/images/ce-new.jpg"
                 alt="Community Empowerment Challenge"
                 width={1920}
                 height={1080}
@@ -161,7 +161,7 @@ function page() {
           <div className="flex flex-col lg:flex-row gap-[32px] w-[100%]">
             <div className="flex flex-col gap-[32px] w-[100%]">
               <Image
-                src="/images/env-new.png"
+                src="/images/env-new.jpg"
                 alt="Environmental Sustainability Challenge"
                 width={1920}
                 height={1080}
@@ -180,7 +180,7 @@ function page() {
             </div>
             <div className="flex flex-col gap-[32px] w-[100%]">
               <Image
-                src="/images/inno-new.png"
+                src="/images/inno-new.jpg"
                 alt="Innovation & Impact Challenge"
                 width={1920}
                 height={1080}
@@ -216,7 +216,7 @@ function page() {
 
         <div className="flex lg:flex-row flex-col w-[100%] gap-[16px]">
           <Image
-            src="/images/nat1.png"
+            src="/images/nat1.jpg"
             alt="Hero Image"
             width={1920}
             height={1080}
@@ -224,7 +224,7 @@ function page() {
             priority
           />
           <Image
-            src="/images/nat3.png"
+            src="/images/nat3.jpg"
             alt="Hero Image"
             width={1920}
             height={1080}
@@ -265,7 +265,7 @@ function page() {
             {/* 1st place */}
             <div className="flex flex-col gap-[32px] w-[100%]">
               <Image
-                src="/images/entre.png"
+                src="/images/entre.jpg"
                 alt="Hero Image"
                 width={1920}
                 height={1080}
@@ -285,7 +285,7 @@ function page() {
             {/* 2nd place */}
             <div className="flex flex-col gap-[32px] w-[100%]">
               <Image
-                src="/images/ye1.png"
+                src="/images/ye1.jpg"
                 alt="Hero Image"
                 width={1920}
                 height={1080}
@@ -307,7 +307,7 @@ function page() {
           <div className="flex flex-col lg:flex-row gap-[32px] w-[100%]">
             <div className="flex flex-col gap-[32px] w-[100%]">
               <Image
-                src="/images/inno.png"
+                src="/images/inno.jpg"
                 alt="Hero Image"
                 width={1920}
                 height={1080}
@@ -326,7 +326,7 @@ function page() {
             </div>
             <div className="flex flex-col gap-[32px] w-[100%]">
               <Image
-                src="/images/env.png"
+                src="/images/env.jpg"
                 alt="Hero Image"
                 width={1920}
                 height={1080}

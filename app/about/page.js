@@ -43,13 +43,13 @@ function page() {
     },
     {
       alt: "People posing for a photo in front of a wall with the Enactus logo.",
-      img: "/images/EnactusWall.png",
+      img: "/images/EnactusWall.jpg",
       width: "578",
       height: "800",
     },
     {
       alt: "Three people cheering.",
-      img: "/images/Cheer.png",
+      img: "/images/Cheer.jpg",
       width: "727",
       height: "800",
     },
@@ -72,7 +72,7 @@ function page() {
 
         <div className="padding md:p-0">
           <Image
-            src="/images/AboutCrowd.png"
+            src="/images/AboutCrowd.jpg"
             alt="A crowd cheering"
             width={1000}
             height={1000}
