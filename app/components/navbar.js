@@ -56,7 +56,7 @@ function Navbar() {
                                     <button
                                         key={item.label}
                                         className={` leading-none transition-all ${isActive
-                                            ? "text-[#ED8B6E] font-semibold"
+                                            ? "text-[#8DC0FF] font-semibold"
                                             : "text-white opacity-60 hover:opacity-100"
                                             }`}
                                         onClick={() => console.log("close nav")}
